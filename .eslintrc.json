@@ -20,11 +20,9 @@
     "ecmaVersion": "latest",
     "sourceType": "module"
   },
-  "ignorePatterns": ["vite.config.ts"],
+  "ignorePatterns": ["vite.config.ts", "*.config.cjs"],
   "plugins": ["react"],
   "rules": {
-    "no-tabs": ["error", { "allowIndentationTabs": true }],
-    "@typescript-eslint/indent": ["error", "tab"],
     "@typescript-eslint/semi": "off",
     "@typescript-eslint/explicit-function-return-type": "off",
     "@typescript-eslint/space-before-function-paren": "off"
