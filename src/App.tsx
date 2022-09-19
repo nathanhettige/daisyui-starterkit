@@ -8,9 +8,9 @@ function App() {
         This boilerplate contains React Typescript, Vite, Tailwind CSS and
         DaisyUI
       </p>
-      <button className="btn btn-primary mt-5">
-        <Link to="/theme">Go to Theme Page</Link>
-      </button>
+      <Link to="/theme">
+        <button className="btn btn-primary mt-5">Go to Theme Page</button>
+      </Link>
     </div>
   );
 }
