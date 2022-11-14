@@ -11,7 +11,7 @@ function ComponentContainer({
 }: ComponentContainerProps): ReactElement {
   return (
     <>
-      <section className="p-5 pr-10 space-y-3 w-max rounded-xl bg-[#D9D9D9] bg-opacity-10">
+      <section className="p-5 pr-10 rounded-xl space-y-3 inline-block bg-[#D9D9D9] bg-opacity-10 mb-4 min-w-max w-full">
         <div>{componentName}</div>
         <div>{componentBody}</div>
       </section>
