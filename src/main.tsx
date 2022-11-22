@@ -4,6 +4,9 @@ import App from './App'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import './index.css'
 import ThemePage from './pages/ThemePage'
+import { QueryClientProvider } from 'react-query';
+import { queryClient } from './api/ReactQueryClient';
+import { ReactQueryDevtools } from 'react-query/devtools';
 
 const router = createBrowserRouter([
   {
@@ -14,10 +17,13 @@ const router = createBrowserRouter([
     path: '/theme',
     element: <ThemePage />
   }
-])
+]);
 
 ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
   <React.StrictMode>
-    <RouterProvider router={router} />
+    <QueryClientProvider client={queryClient}>
+      <ReactQueryDevtools />
+      <RouterProvider router={router} />
+    </QueryClientProvider>
   </React.StrictMode>
-)
+);
