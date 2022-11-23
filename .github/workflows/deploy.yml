@@ -25,7 +25,6 @@ jobs:
        yarn build
 
     - name: Deploy
-      working
       run: |
         git init
         git checkout -B main
