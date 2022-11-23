@@ -25,13 +25,13 @@ jobs:
        yarn build
 
     - name: Deploy
+      working-directory: ./dist
       run: |
         git init
         git checkout -B main
         git add -A
         git commit -m 'deploy'
         git push -f git@github.com:nathanhettige/starterkit.git main:gh-pages
-      working-directory: ./dist
 
 
 
