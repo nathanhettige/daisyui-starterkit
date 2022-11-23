@@ -1,4 +1,4 @@
-name: 'Dependency Management'
+name: 'Upgrade Dependencies'
 
 on:
   schedule:
