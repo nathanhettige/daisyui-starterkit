@@ -5,6 +5,7 @@ on:
     - cron: '43 16 * * 2'
   push:
     branches: [ "main" ]
+  pull_request:
 
 jobs:
   upgrade:
