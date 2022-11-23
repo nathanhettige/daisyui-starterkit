@@ -35,6 +35,6 @@ jobs:
       with:
         # token: ${{ secrets.GITHUB_TOKEN }}
         branch: update/yarn-upgrade
-        base: $GITHUB_BASE_REF
+        base: ${{ github.ref }
         title: Run yarn upgrade --latest
         commit-message: "chore(deps): Run yarn upgrade"
