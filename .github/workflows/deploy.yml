@@ -1,0 +1,20 @@
+name: 'Deploy to GitHub Pages'
+
+on:
+  pull_request:
+    # The branches below must be a subset of the branches above
+    branches: [ "main" ]
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout branch
+      uses: actions/checkout@v3
+    - name: Run yarn install
+      uses: actions/setup-node@v3
+      with:
+        node-version: latest
+        cache: 'yarn'
+      run: yarn install
