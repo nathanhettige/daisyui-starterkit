@@ -22,6 +22,7 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
         cache: 'yarn'
-    - uses: borales/actions-yarn@v3.0.0
-        with:
-          cmd: install --frozen-lockfile
+    - name: Install dependencies
+      uses: borales/actions-yarn@v3.0.0
+      with:
+        cmd: install --frozen-lockfile
