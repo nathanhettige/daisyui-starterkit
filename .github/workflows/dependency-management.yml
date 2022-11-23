@@ -30,7 +30,7 @@ jobs:
         cmd: upgrade --latest
         
     - name: Print branch name
-      run: echo ${{ github.ref_name }}
+      run: echo ${{ github.head_ref }}
     
     # Open a pull request if there are any changes
     - name: Create Pull Request
@@ -38,6 +38,6 @@ jobs:
       with:
         # token: ${{ secrets.GITHUB_TOKEN }}
         branch: update/yarn-upgrade
-        base: ${{ github.ref_name }}
+        base: ${{ github.head_ref }}
         title: Run yarn upgrade --latest
         commit-message: "chore(deps): Run yarn upgrade"
