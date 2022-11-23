@@ -28,6 +28,9 @@ jobs:
       uses: borales/actions-yarn@v3.0.0
       with:
         cmd: upgrade --latest
+        
+    - name: Print branch name
+      run: echo ${{ github.ref }}
     
     # Open a pull request if there are any changes
     - name: Create Pull Request
