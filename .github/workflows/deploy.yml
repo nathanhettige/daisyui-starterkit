@@ -12,25 +12,28 @@ jobs:
     steps:
     - name: Checkout branch
       uses: actions/checkout@v3
+
     - name: Setup latest version of node
       uses: actions/setup-node@v3
       with:
         node-version: latest
         cache: 'yarn'
 
-    - name: Install dependancies
-      run: yarn install
-
-    - name: Build
-      run: yarn build
+    - name: Install dependancies and build
+      run: |
+       yarn install
+       yarn build
 
     - name: Deploy
-      run: cd dist
-    - run: git init
-    - run: git checkout -B main
-    - run: git add -A
-    - run: git commit -m 'deploy'
-    - run: git push -f git@github.com:nathanhettige/starterkit.git main:gh-pages
+      working
+      run: |
+        git init
+        git checkout -B main
+        git add -A
+        git commit -m 'deploy'
+        git push -f git@github.com:nathanhettige/starterkit.git main:gh-pages
+      working-directory: ./dist
+
 
 
       
