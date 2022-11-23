@@ -12,9 +12,10 @@ jobs:
     steps:
     - name: Checkout branch
       uses: actions/checkout@v3
-    - name: Run yarn install
+    - name: Set latest version of node
       uses: actions/setup-node@v3
       with:
         node-version: latest
         cache: 'yarn'
+    - name: Run Yarn Install
       run: yarn install
