@@ -2,7 +2,7 @@ name: 'Upgrade Dependencies'
 
 on:
   schedule:
-    - cron: '*/5 * * * *'
+    - cron: '11 9 * * *'
   pull_request:
     branches:
       - main
