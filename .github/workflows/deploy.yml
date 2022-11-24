@@ -24,6 +24,7 @@ jobs:
        yarn install
        yarn build
 
+    - uses: actions/checkout@v2
     - name: Configure git
       run: |
         git init
@@ -39,8 +40,6 @@ jobs:
         git add -A
         git commit -m 'deploy'
         git push -f git@github.com:nathanhettige/starterkit.git main:gh-pages
-        git remote set-url --push origin https://your_username:$GITHUB_TOKEN@github.com/your/repo
-
 
 
 
