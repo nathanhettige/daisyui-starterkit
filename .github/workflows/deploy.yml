@@ -24,7 +24,6 @@ jobs:
        yarn install
        yarn build
 
-    - uses: actions/checkout@v2
     - name: Configure git
       run: |
         git init
@@ -34,7 +33,7 @@ jobs:
         CI_COMMIT_AUTHOR: Continuous Integration
 
     - name: Deploy
-      working-directory: ./dist
+      working-directory: dist
       run: |
         git checkout -B main
         git add -A
