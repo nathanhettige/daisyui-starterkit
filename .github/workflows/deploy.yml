@@ -33,6 +33,7 @@ jobs:
         CI_COMMIT_AUTHOR: Continuous Integration
 
     - name: Deploy
+      uses: actions/checkout@v3
       working-directory: dist
       run: |
         git checkout -B main
