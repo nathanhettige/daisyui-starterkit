@@ -24,14 +24,23 @@ jobs:
        yarn install
        yarn build
 
+    - name: Configure git
+      run: |
+        git init
+        git config --global user.name "${{ env.CI_COMMIT_AUTHOR }}"
+        git config --global user.email "username@users.noreply.github.com"
+      env: 
+        CI_COMMIT_AUTHOR: Continuous Integration
+
     - name: Deploy
       working-directory: ./dist
       run: |
-        git init
         git checkout -B main
         git add -A
         git commit -m 'deploy'
         git push -f git@github.com:nathanhettige/starterkit.git main:gh-pages
+        git remote set-url --push origin https://your_username:$GITHUB_TOKEN@github.com/your/repo
+
 
 
 
