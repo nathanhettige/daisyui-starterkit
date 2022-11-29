@@ -13,19 +13,17 @@ jobs:
     
     steps:
     - uses: actions/checkout@v3
-    - name: Use Node.js ${{ matrix.node-version }}
+    - name: Install latest version of node
       uses: actions/setup-node@v3
       with:
         node-version: latest
         cache: 'yarn'
 
-    - name: Upgrade Packages
-      uses: borales/actions-yarn@v3.0.0
-      with:
-        cmd: upgrade --latest
+    - name: Upgrade packages
+      run: yarn upgrade --latest
     
     # Open a pull request if there are any changes
-    - name: Create Pull Request
+    - name: Create pull request
       uses: peter-evans/create-pull-request@v4
       with:
         branch: update/yarn-upgrade
