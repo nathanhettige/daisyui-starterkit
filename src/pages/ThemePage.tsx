@@ -3,7 +3,7 @@ import Container from '../components/Theme/ComponentContainer';
 import * as components from '../components/Theme/components';
 
 const ThemePage = () => {
-  const spotlightComponets: { [key: string]: ReactNode } = {
+  const spotlightComponets: Record<string, ReactNode> = {
     /* Add components you want shown at the top */
     Buttons: components.Buttons,
     Headings: components.Headings
