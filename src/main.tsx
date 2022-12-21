@@ -1,12 +1,15 @@
-import React from 'react'
-import ReactDOM from 'react-dom/client'
-import App from './App'
-import { createBrowserRouter, RouterProvider } from 'react-router-dom'
-import './index.css'
-import ThemePage from './pages/ThemePage'
+import React, { lazy, Suspense } from 'react';
+import ReactDOM from 'react-dom/client';
+import App from './App';
+import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import './index.css';
 import { QueryClientProvider } from 'react-query';
 import { queryClient } from './api/ReactQueryClient';
 import { ReactQueryDevtools } from 'react-query/devtools';
+import { PageLoading } from './components/Theme/utils/PageLoading';
+
+/* Code split theme page */
+const ThemePage = lazy(async () => await import('./pages/ThemePage'));
 
 const router = createBrowserRouter([
   {
@@ -15,7 +18,11 @@ const router = createBrowserRouter([
   },
   {
     path: '/theme',
-    element: <ThemePage />
+    element: (
+      <Suspense fallback={<PageLoading />}>
+        <ThemePage />
+      </Suspense>
+    )
   }
 ]);
 
