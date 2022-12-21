@@ -10,6 +10,7 @@ The goal of this project is to build a modern, stable and performant boilerplate
 * React Router
 * Prettier
 * ESLint
+* React Query
 
 See [issues](https://github.com/nathanhettige/starterkit/issues) for new features in development.
 

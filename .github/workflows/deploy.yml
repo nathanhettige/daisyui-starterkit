@@ -1,0 +1,47 @@
+name: 'Deploy to GitHub Pages'
+
+on:
+  pull_request:
+    # The branches below must be a subset of the branches above
+    branches: [ "main" ]
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout branch
+      uses: actions/checkout@v3
+
+    - name: Setup latest version of node
+      uses: actions/setup-node@v3
+      with:
+        node-version: latest
+        cache: 'yarn'
+
+    - name: Install dependancies and build
+      run: |
+       yarn install
+       yarn build
+
+    - name: Configure git
+      run: |
+        git init
+        git config --global user.name "${{ env.CI_COMMIT_AUTHOR }}"
+        git config --global user.email "username@users.noreply.github.com"
+      env: 
+        CI_COMMIT_AUTHOR: Continuous Integration
+
+    - name: Deploy
+      uses: actions/checkout@v3
+      working-directory: dist
+      run: |
+        git checkout -B main
+        git add -A
+        git commit -m 'deploy'
+        git push -f git@github.com:nathanhettige/starterkit.git main:gh-pages
+
+
+
+      
+

@@ -1,0 +1,29 @@
+name: 'Upgrade Dependencies'
+
+on:
+  schedule:
+    - cron: '11 9 * * *'
+
+jobs:
+  upgrade:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - uses: actions/checkout@v3
+    - name: Install latest version of node
+      uses: actions/setup-node@v3
+      with:
+        node-version: latest
+        cache: 'yarn'
+
+    - name: Upgrade packages
+      run: yarn upgrade --latest
+    
+    # Open a pull request if there are any changes
+    - name: Create pull request
+      uses: peter-evans/create-pull-request@v4
+      with:
+        branch: update/yarn-upgrade
+        base: ${{ github.head_ref }}
+        title: Package upgrades via Github Action
+        commit-message: "Upgrades across major and/or minor versions via yarn"
