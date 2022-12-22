@@ -24,6 +24,10 @@ const router = createBrowserRouter(
           <ThemePage />
         </Suspense>
       )
+    },
+    {
+      path: '/test',
+      element: <PageLoading />
     }
   ],
   { basename: `${import.meta.env.BASE_URL}` }
