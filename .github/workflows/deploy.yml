@@ -1,8 +1,9 @@
 name: 'Deploy to GitHub Pages'
 
 # Runs on pushes targeting the default branch
-push:
-  branches: ["main"]
+on:
+  push:
+    branches: ["main"]
 
 # Allows you to run this workflow manually from the Actions tab
 workflow_dispatch:
