@@ -23,7 +23,7 @@ concurrency:
 
 # Set base path for pages to repo name
 env:
-  VITE_BASE_URL: /${{ github.event.repository.name }}/
+  BASE_URL: /${{ github.event.repository.name }}/
 
 jobs:
   build:
