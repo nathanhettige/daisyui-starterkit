@@ -21,14 +21,14 @@ concurrency:
   group: ${{ github.ref }}
   cancel-in-progress: true
 
-jobs:
-  deploy:
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
+# Set base path for pages to repo name
+env:
+  VITE_BASE_URL: /${{ github.event.repository.name }}/
 
+jobs:
+  build:
     runs-on: ubuntu-latest
-    
+
     steps:
     - name: Checkout branch
       uses: actions/checkout@v3
@@ -49,6 +49,14 @@ jobs:
       with:
         # Upload entire repository
         path: './dist'
+
+
+  deploy:
+    needs: build
+
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
 
     - name: Deploy to GitHub Pages
       id: deployment
