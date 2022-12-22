@@ -8,16 +8,19 @@ import { QueryClientProvider } from 'react-query';
 import { queryClient } from './api/ReactQueryClient';
 import { ReactQueryDevtools } from 'react-query/devtools';
 
-const router = createBrowserRouter([
-  {
-    path: '/',
-    element: <App />
-  },
-  {
-    path: '/theme',
-    element: <ThemePage />
-  }
-]);
+const router = createBrowserRouter(
+  [
+    {
+      path: '/',
+      element: <App />
+    },
+    {
+      path: '/theme',
+      element: <ThemePage />
+    }
+  ],
+  { basename: `${import.meta.env.BASE_URL}` }
+);
 
 ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
   <React.StrictMode>
