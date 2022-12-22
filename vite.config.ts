@@ -13,6 +13,5 @@ export default defineConfig(({ mode }) => {
       __APP_ENV__: env.APP_ENV
     },
     plugins: [react(), eslint({ failOnError: mode !== 'development' })],
-    base: '/starterkit/'
   };
 });
