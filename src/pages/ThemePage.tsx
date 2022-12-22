@@ -5,6 +5,7 @@ import * as components from '../components/Theme/components';
 const ThemePage = () => {
   const spotlightComponets: Record<string, ReactNode> = {
     /* Add components you want shown at the top */
+    /* STILL IN DEVELOPMENT */
     Buttons: components.Buttons,
     Headings: components.Headings
   };
