@@ -11,20 +11,23 @@ import { PageLoading } from './components/Theme/utils/PageLoading';
 /* Code split theme page */
 const ThemePage = lazy(async () => await import('./pages/ThemePage'));
 
-const router = createBrowserRouter([
-  {
-    path: '/',
-    element: <App />
-  },
-  {
-    path: '/theme',
-    element: (
-      <Suspense fallback={<PageLoading />}>
-        <ThemePage />
-      </Suspense>
-    )
-  }
-]);
+const router = createBrowserRouter(
+  [
+    {
+      path: '/',
+      element: <App />
+    },
+    {
+      path: '/theme',
+      element: (
+        <Suspense fallback={<PageLoading />}>
+          <ThemePage />
+        </Suspense>
+      )
+    }
+  ],
+  { basename: `${import.meta.env.BASE_URL}` }
+);
 
 ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
   <React.StrictMode>
