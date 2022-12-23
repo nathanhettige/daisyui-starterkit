@@ -8,6 +8,5 @@ updates:
   - package-ecosystem: "npm" # See documentation for possible values
     directory: "/" # Location of package manifests
     allow: "all"
-    target-branch: "feature/29"
     schedule:
       interval: "daily"
