@@ -4,7 +4,7 @@
 
 **Start your next React project in seconds.**
 <br>
-[See the demo]([demo-url])
+[See the demo](https://nathanhettige.github.io/daisyui-boilerplate)
 
 ![][release]
 ![][last-commit]
@@ -38,7 +38,6 @@ See [issues](https://github.com/nathanhettige/starterkit/issues) for new feature
 > yarn dev
 ```
 [closed-issues]: https://flat.badgen.net/github/closed-issues/nathanhettige/daisyui-boilerplate
-[demo-url]: https://nathanhettige.github.io/daisyui-boilerplate
 [logo-url]: ./public/Logo.svg
 [last-commit]: https://flat.badgen.net/github/last-commit/nathanhettige/daisyui-boilerplate/main
 [open-issues]: https://flat.badgen.net/github/open-issues/nathanhettige/daisyui-boilerplate
