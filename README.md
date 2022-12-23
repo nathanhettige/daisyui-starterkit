@@ -39,7 +39,6 @@ See [issues](https://github.com/nathanhettige/starterkit/issues) for new feature
 ```
 [closed-issues]: https://flat.badgen.net/github/closed-issues/nathanhettige/daisyui-boilerplate
 [demo-url]: https://nathanhettige.github.io/daisyui-boilerplate/
-<!-- [dependabot]: https://flat.badgen.net/github/dependabot/nathanhettige/daisyui-boilerplate -->
 [logo-url]: ./public/Logo.svg
 [last-commit]: https://flat.badgen.net/github/last-commit/nathanhettige/daisyui-boilerplate/main
 [open-issues]: https://flat.badgen.net/github/open-issues/nathanhettige/daisyui-boilerplate
