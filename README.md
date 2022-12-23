@@ -25,11 +25,11 @@ An up to date boilerplate to build a modern, performant and developer friendly R
 ## 🌼 Features
 * React 18 with TypeScript
 * Vite
-* DaisyUI & TailwindCSS
+* DaisyUI and TailwindCSS
 * Prettier and ESLint
 * React Query
 
-See [open issues](https://github.com/nathanhettige/starterkit/issues) for new features in development.
+See [open issues](https://github.com/nathanhettige/daisyui-boilerplate/issues) for new features in development.
 
 ## 🚀 Quick Start
 
