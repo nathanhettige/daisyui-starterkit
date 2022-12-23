@@ -28,7 +28,7 @@ An up to date boilerplate to build a modern, performant and developer friendly R
 * GitHub Actions to build, test, deploy, and maintain your project
 * DaisyUI and TailwindCSS
 * Prettier and ESLint
-* React Query
+* React Query and more...
 
 See [open issues](https://github.com/nathanhettige/daisyui-boilerplate/issues) for new features in development.
 
