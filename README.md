@@ -1,13 +1,16 @@
 <div align="center">
 
-[![][logo-url]][docs-url]
+![][logo-url]
 
 **Start your next React project in seconds.**
 <br>
 [See the demo]([demo-url])
 
 ![][release]
-
+![][last-commit]
+![][closed-issues]
+![][open-issues]
+<!-- ![][dependabot] -->
 </div>
 
 
@@ -34,7 +37,13 @@ See [issues](https://github.com/nathanhettige/starterkit/issues) for new feature
 > yarn
 > yarn dev
 ```
-[release]: https://badgen.net/github/release/babel/babel
+[closed-issues]: https://flat.badgen.net/github/closed-issues/nathanhettige/daisyui-boilerplate
 [demo-url]: https://nathanhettige.github.io/daisyui-boilerplate/
-[docs-url]: https://daisyui.com/
+<!-- [dependabot]: https://flat.badgen.net/github/dependabot/nathanhettige/daisyui-boilerplate -->
 [logo-url]: ./public/Logo.svg
+[last-commit]: https://flat.badgen.net/github/last-commit/nathanhettige/daisyui-boilerplate/main
+[open-issues]: https://flat.badgen.net/github/open-issues/nathanhettige/daisyui-boilerplate
+[release]: https://flat.badgen.net/github/release/nathanhettige/daisyui-boilerplate
+
+
+
