@@ -1,0 +1,52 @@
+name: Build, Test and Lint
+
+# This action works with pull requests and pushes
+on:
+  pull_request:
+  push:
+    branches:
+      - feature/*
+
+jobs:
+  checkout:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+        with:
+          # Make sure the actual branch is checked out when running on pull requests
+          ref: ${{ github.head_ref }}
+
+  installDependencies:
+    needs: checkout
+    runs-on: ubuntu-latest
+    steps:
+     - name: Setup latest version of node and install dependencies
+       uses: actions/setup-node@v3
+       with:
+        node-version: latest
+        cache: 'yarn'
+    
+    - name: Install dependancies
+      run: |
+       yarn install
+       yarn build
+
+  build:
+    needs: installDependencies
+    runs-on: ubuntu-latest
+    steps:
+    - name: Buld
+      run: yarn  build
+
+  esLint:
+    needs: installDependencies
+    runs-on: ubuntu-latest
+    steps:
+    - name: Lint
+      run: npx eslint .
+
+
+
+  
+    
