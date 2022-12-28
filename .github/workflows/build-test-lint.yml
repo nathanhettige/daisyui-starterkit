@@ -8,7 +8,7 @@ on:
       - feature/*
 
 jobs:
-  Install Dependencies:
+  install-dependencies:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -41,7 +41,7 @@ jobs:
           key: ${{ github.run_id }}
 
   build:
-    needs: Install Dependencies
+    needs: install-dependencies
     runs-on: ubuntu-latest
     steps:
     - name: Restore cache
@@ -58,7 +58,7 @@ jobs:
         retention-days: 1
 
   esLint:
-    needs: Install Dependencies
+    needs: install-dependencies
     runs-on: ubuntu-latest
     steps:
     - name: Restore cache
