@@ -32,7 +32,7 @@ jobs:
         uses: actions/upload-artifact@v3
         with:
           name:  ${{ github.event.repository.name }}-repo
-          path: /
+          path: .
 
   build:
     needs: installDependencies
