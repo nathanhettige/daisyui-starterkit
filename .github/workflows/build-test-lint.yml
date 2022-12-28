@@ -8,7 +8,7 @@ on:
       - feature/*
 
 jobs:
-  checkout:
+  installDependencies:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -17,10 +17,6 @@ jobs:
           # Make sure the actual branch is checked out when running on pull requests
           ref: ${{ github.head_ref }}
 
-  installDependencies:
-    needs: checkout
-    runs-on: ubuntu-latest
-    steps:
      - name: Setup latest version of node and install dependencies
        uses: actions/setup-node@v3
        with:
@@ -32,10 +28,17 @@ jobs:
         yarn install
         yarn build
 
+     - name: Upload directory
+        uses: actions/upload-artifact@v3
+        with:
+          name:  ${{ github.event.repository.name }}-repo
+          path: /
+
   build:
     needs: installDependencies
     runs-on: ubuntu-latest
     steps:
+    - uses: actions/checkout@v2
     - name: Buld
       run: yarn  build
     - name: 'Upload build artifact'
