@@ -27,10 +27,10 @@ jobs:
         node-version: latest
         cache: 'yarn'
     
-    - name: Install dependancies
-      run: |
-       yarn install
-       yarn build
+     - name: Install dependancies
+       run: |
+        yarn install
+        yarn build
 
   build:
     needs: installDependencies
