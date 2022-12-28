@@ -28,12 +28,6 @@ jobs:
           yarn install
           yarn build
 
-      - name: Upload directory
-        uses: actions/upload-artifact@v3
-        with:
-          name:  ${{ github.event.repository.name }}-repo
-          path: .
-
       - name: Cache files
         uses: actions/cache@v3
         with:
