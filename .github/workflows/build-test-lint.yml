@@ -7,6 +7,9 @@ on:
     branches:
       - feature/*
 
+env:
+  CACHE_KEY: ${{ github.ref_name }}-${{ github.run_id }}
+
 jobs:
   Install-Dependencies:
     name: Install Dependencies
@@ -32,7 +35,7 @@ jobs:
         uses: actions/cache@v3
         with:
           path: .
-          key: ${{ github.run_id }}
+          key: $CACHE_KEY
 
   Build:
     needs: Install-Dependencies
@@ -42,7 +45,7 @@ jobs:
       uses: actions/cache@v3
       with:
         path: .
-        key: ${{ github.run_id }}
+        key: $CACHE_KEY
 
     - name: Build
       run: yarn  build
@@ -55,7 +58,7 @@ jobs:
       uses: actions/cache@v3
       with:
         path: .
-        key: ${{ github.run_id }}
+        key: $CACHE_KEY
 
     - name: Setup latest version of node
       uses: actions/setup-node@v3
