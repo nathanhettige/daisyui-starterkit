@@ -35,7 +35,7 @@ jobs:
         uses: actions/cache@v3
         with:
           path: .
-          key: $CACHE_KEY
+          key: ${{ env.CACHE_KEY }}
 
   Build:
     needs: Install-Dependencies
@@ -45,7 +45,7 @@ jobs:
       uses: actions/cache@v3
       with:
         path: .
-        key: $CACHE_KEY
+        key: ${{ env.CACHE_KEY }}
 
     - name: Build
       run: yarn  build
@@ -58,7 +58,7 @@ jobs:
       uses: actions/cache@v3
       with:
         path: .
-        key: $CACHE_KEY
+        key: ${{ env.CACHE_KEY }}
 
     - name: Setup latest version of node
       uses: actions/setup-node@v3
