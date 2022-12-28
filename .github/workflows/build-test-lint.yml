@@ -26,6 +26,8 @@ jobs:
         with:
           node-version: latest
           cache: 'yarn'
+    
+      - name: Install dependancies
         run: |
           yarn install
 
