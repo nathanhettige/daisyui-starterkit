@@ -8,7 +8,7 @@ on:
       - feature/*
 
 jobs:
-  installDependencies:
+  Install Dependencies:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -34,11 +34,21 @@ jobs:
           name:  ${{ github.event.repository.name }}-repo
           path: .
 
+      - name: Cache files
+        uses: actions/cache@v3
+        with:
+          path: .
+          key: ${{ github.run_id }}
+
   build:
-    needs: installDependencies
+    needs: Install Dependencies
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v2
+    - name: Restore cache
+      uses: actions/cache@v3
+      with:
+        path: .
+        key: ${{ github.run_id }}
     - name: Buld
       run: yarn  build
     - name: 'Upload build artifact'
@@ -48,13 +58,14 @@ jobs:
         retention-days: 1
 
   esLint:
-    needs: installDependencies
+    needs: Install Dependencies
     runs-on: ubuntu-latest
     steps:
-    - name: Download build artifact
-      uses: actions/download-artifact@v3
-      with: 
-        name: ${{ github.event.repository.name }}
+    - name: Restore cache
+      uses: actions/cache@v3
+      with:
+        path: .
+        key: ${{ github.run_id }}
     - name: Lint
       run: npx eslint .
 
