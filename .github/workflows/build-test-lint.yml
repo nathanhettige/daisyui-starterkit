@@ -17,7 +17,7 @@ jobs:
           # Make sure the actual branch is checked out when running on pull requests
           ref: ${{ github.head_ref }}
 
-      - name: Setup latest version of node and install dependencies
+      - name: Setup latest version of node
         uses: actions/setup-node@v3
         with:
           node-version: latest
@@ -26,7 +26,6 @@ jobs:
       - name: Install dependancies
         run: |
           yarn install
-          yarn build
 
       - name: Cache files
         uses: actions/cache@v3
@@ -43,13 +42,9 @@ jobs:
       with:
         path: .
         key: ${{ github.run_id }}
-    - name: Buld
+
+    - name: Build
       run: yarn  build
-    - name: 'Upload build artifact'
-      uses: actions/upload-artifact@v3
-      with:
-        name: ${{ github.event.repository.name }}
-        retention-days: 1
 
   esLint:
     needs: install-dependencies
@@ -60,6 +55,13 @@ jobs:
       with:
         path: .
         key: ${{ github.run_id }}
+
+    - name: Setup latest version of node
+      uses: actions/setup-node@v3
+      with:
+        node-version: latest
+        cache: 'yarn'
+  
     - name: Lint
       run: npx eslint .
 
