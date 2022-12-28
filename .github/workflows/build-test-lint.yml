@@ -38,11 +38,20 @@ jobs:
     steps:
     - name: Buld
       run: yarn  build
+    - name: 'Upload build artifact'
+    uses: actions/upload-artifact@v3
+    with:
+      name: ${{ github.event.repository.name }}
+      retention-days: 1
 
   esLint:
     needs: installDependencies
     runs-on: ubuntu-latest
     steps:
+    - name: Download build artifact
+      uses: actions/download-artifact@v3
+      with: 
+        name: ${{ github.event.repository.name }}
     - name: Lint
       run: npx eslint .
 
