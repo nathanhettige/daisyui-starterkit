@@ -42,10 +42,10 @@ jobs:
     - name: Buld
       run: yarn  build
     - name: 'Upload build artifact'
-    uses: actions/upload-artifact@v3
-    with:
-      name: ${{ github.event.repository.name }}
-      retention-days: 1
+      uses: actions/upload-artifact@v3
+      with:
+        name: ${{ github.event.repository.name }}
+        retention-days: 1
 
   esLint:
     needs: installDependencies
