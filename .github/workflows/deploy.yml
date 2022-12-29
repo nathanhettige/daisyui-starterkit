@@ -29,26 +29,25 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Checkout branch
-      uses: actions/checkout@v3
+      - name: Checkout branch
+        uses: actions/checkout@v3
 
-    - name: Setup latest version of node
-      uses: actions/setup-node@v3
-      with:
-        node-version: latest
-        cache: 'yarn'
+      - name: Setup latest version of node
+        uses: actions/setup-node@v3
+        with:
+          node-version: latest
+          cache: 'yarn'
 
-    - name: Install dependancies and build
-      run: |
-       yarn install
-       yarn build
+      - name: Install dependancies and build
+        run: |
+          yarn install
+          yarn build
 
-    - name: Upload artifact
-      uses: actions/upload-pages-artifact@v1
-      with:
-        # Upload entire repository
-        path: './dist'
-
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v1
+        with:
+          # Upload entire repository
+          path: './dist'
 
   Deploy:
     needs: Build
@@ -58,6 +57,6 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
 
     steps:
-    - name: Deploy to GitHub Pages
-      id: deployment
-      uses: actions/deploy-pages@v1
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v1
