@@ -18,4 +18,4 @@ jobs:
           node-version: latest
           cache: 'yarn'
       - run: yarn install --immutable
-      - run: npx eslint .
+      - run: yarn lint
