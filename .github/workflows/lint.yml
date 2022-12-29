@@ -19,3 +19,15 @@ jobs:
           cache: 'yarn'
       - run: yarn install --immutable
       - run: yarn lint
+
+    prettier:
+      name: Prettier
+      runs-on: ubuntu-latest
+      steps:
+        - uses: actions/checkout@v3
+        - uses: actions/setup-node@v3
+          with:
+            node-version: latest
+            cache: 'yarn'
+        - run: yarn install --immutable
+        - run: yarn prettier
