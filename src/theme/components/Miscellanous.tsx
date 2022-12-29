@@ -194,28 +194,6 @@ export const Select = (
   </div>
 );
 
-export const ButtonGroup = (
-  <div className="space-y-2">
-    <div className="btn-group btn-group-vertical lg:btn-group-horizontal">
-      <button className="btn">Button</button>
-      <button className="btn btn-active">Button</button>
-      <button className="btn">Button</button>
-    </div>
-    <div className="btn-group">
-      <input type="radio" name="options" data-title="1" className="btn" />
-      <input
-        type="radio"
-        name="options"
-        data-title="2"
-        className="btn"
-        checked
-      />
-      <input type="radio" name="options" data-title="3" className="btn" />
-      <input type="radio" name="options" data-title="4" className="btn" />
-    </div>
-  </div>
-);
-
 export const SocialLinks = (
   <div className="flex flex-row gap-4">
     <a href="http://twitter.com">
@@ -325,7 +303,7 @@ export const StackedCards = (
 );
 
 export const Breadcrumbs = (
-  <div>
+  <div className="flex flex-col gap-0">
     <div className="text-sm breadcrumbs">
       <ul>
         <li>
