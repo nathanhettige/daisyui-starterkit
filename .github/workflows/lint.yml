@@ -5,7 +5,7 @@ on:
   workflow_dispatch:
   push:
     branches:
-      - feature/*
+      - main
 
 jobs:
   eslint:
