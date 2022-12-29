@@ -48,7 +48,7 @@ See [open issues](https://github.com/nathanhettige/daisyui-boilerplate/issues) f
 </div>
 
 [closed-issues]: https://flat.badgen.net/github/closed-issues/nathanhettige/daisyui-boilerplate
-[build]: https://img.shields.io/github/actions/workflow/status/nathanhettige/daisyui-boilerplate/build.yml?label=build&logo=vite&style=flat-square
+[build]: https://img.shields.io/github/actions/workflow/status/nathanhettige/daisyui-boilerplate/build.yml?label=build&logo=vite&logoColor=%23FFFFFF&style=flat-square
 [dependabot]: https://flat.badgen.net/github/dependabot/ubuntu/yaru
 [eslint&prettier]: https://img.shields.io/github/actions/workflow/status/nathanhettige/daisyui-boilerplate/lint.yml?label=ESLint%20%26%20Prettier&logo=ESLint&style=flat-square
 [logo-url]: ./public/Logo.svg
