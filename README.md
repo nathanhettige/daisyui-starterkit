@@ -6,11 +6,11 @@
 **[See the demo](https://nathanhettige.github.io/daisyui-boilerplate)**
 
 ![][release]
+![][build]
+![][eslint&prettier]
 ![][last-commit]
 ![][closed-issues]
-![][open-issues]
-<!-- ![][dependabot] -->
-
+![][dependabot]
 
 <br>
 
@@ -23,12 +23,13 @@ An up to date boilerplate to build a modern, performant and developer friendly R
 </div>
 
 ## 🌼 Features
-* React 18 with TypeScript
-* Vite
-* GitHub Actions to build, test, deploy, and maintain your project
-* DaisyUI and TailwindCSS
-* Prettier and ESLint
-* React Query and more...
+
+- React 18 with TypeScript
+- Vite
+- GitHub Actions to build, test, deploy, and maintain your project
+- DaisyUI and TailwindCSS
+- Prettier and ESLint
+- React Query and more...
 
 See [open issues](https://github.com/nathanhettige/daisyui-boilerplate/issues) for new features in development.
 
@@ -46,12 +47,11 @@ See [open issues](https://github.com/nathanhettige/daisyui-boilerplate/issues) f
 (づ ᴗ _ᴗ)づ Made with love ♡
 </div>
 
-
 [closed-issues]: https://flat.badgen.net/github/closed-issues/nathanhettige/daisyui-boilerplate
+[build]: https://img.shields.io/github/actions/workflow/status/nathanhettige/daisyui-boilerplate/build.yml?label=build&logo=vite&logoColor=%23FFFFFF&style=flat-square
+[dependabot]: https://flat.badgen.net/github/dependabot/ubuntu/yaru
+[eslint&prettier]: https://img.shields.io/github/actions/workflow/status/nathanhettige/daisyui-boilerplate/lint.yml?label=ESLint%20%26%20Prettier&logo=ESLint&style=flat-square
 [logo-url]: ./public/Logo.svg
 [last-commit]: https://flat.badgen.net/github/last-commit/nathanhettige/daisyui-boilerplate/main
 [open-issues]: https://flat.badgen.net/github/open-issues/nathanhettige/daisyui-boilerplate
 [release]: https://flat.badgen.net/github/release/nathanhettige/daisyui-boilerplate
-
-
-
