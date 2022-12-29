@@ -6,11 +6,11 @@
 **[See the demo](https://nathanhettige.github.io/daisyui-boilerplate)**
 
 ![][release]
+![][build]
+![][eslint&prettier]
 ![][last-commit]
 ![][closed-issues]
 ![][dependabot]
-![][eslint&prettier]
-![][build]
 
 <br>
 
