@@ -1,6 +1,6 @@
 import { ReactNode } from 'react';
-import Container from '../components/Theme/ComponentContainer';
-import * as components from '../components/Theme/components';
+import * as components from '@theme/components';
+import ComponentContainer from '@theme/ComponentContainer';
 
 const ThemePage = () => {
   const spotlightComponets: Record<string, ReactNode> = {
@@ -16,7 +16,11 @@ const ThemePage = () => {
         {Object.entries(spotlightComponets).map(([key, value]) => {
           return (
             <>
-              <Container key={key} componentName={key} componentBody={value} />
+              <ComponentContainer
+                key={key}
+                componentName={key}
+                componentBody={value}
+              />
             </>
           );
         })}
@@ -24,7 +28,7 @@ const ThemePage = () => {
           if (!Object.values(spotlightComponets).includes(value)) {
             return (
               <>
-                <Container
+                <ComponentContainer
                   key={key}
                   componentName={formatComponentName(key)}
                   componentBody={value}

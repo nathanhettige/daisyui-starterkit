@@ -6,7 +6,7 @@ import './index.css';
 import { QueryClientProvider } from 'react-query';
 import { queryClient } from './api/ReactQueryClient';
 import { ReactQueryDevtools } from 'react-query/devtools';
-import { PageLoading } from './components/Theme/utils/PageLoading';
+import { PageLoading } from '@ui/utils/PageLoading';
 
 /* Code split theme page */
 const ThemePage = lazy(async () => await import('./pages/ThemePage'));
