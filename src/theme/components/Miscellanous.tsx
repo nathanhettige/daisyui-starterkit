@@ -1,9 +1,9 @@
 export const Checkboxes = (
   <div className="space-x-2">
-    <input type="checkbox" className="toggle toggle-success" checked />
-    <input type="checkbox" className="toggle toggle-warning" checked />
-    <input type="checkbox" className="toggle toggle-info" checked />
-    <input type="checkbox" className="toggle toggle-error" checked />
+    <input type="checkbox" className="toggle-success toggle" checked />
+    <input type="checkbox" className="toggle-warning toggle" checked />
+    <input type="checkbox" className="toggle-info toggle" checked />
+    <input type="checkbox" className="toggle-error toggle" checked />
   </div>
 );
 
@@ -41,7 +41,7 @@ export const Range = (
 );
 
 export const Rating = (
-  <div className="space-y-2 flex flex-col">
+  <div className="flex flex-col space-y-2">
     <div className="rating rating-xs">
       <input
         type="radio"
@@ -158,8 +158,8 @@ export const Rating = (
 );
 
 export const Select = (
-  <div className="space-y-2 flex flex-col">
-    <select className="select select-bordered select-lg w-full">
+  <div className="flex flex-col space-y-2">
+    <select className="select-bordered select select-lg w-full">
       <option disabled selected>
         Large
       </option>
@@ -167,7 +167,7 @@ export const Select = (
       <option>Large Orange</option>
       <option>Large Tomato</option>
     </select>
-    <select className="select select-bordered w-full">
+    <select className="select-bordered select w-full">
       <option disabled selected>
         Normal
       </option>
@@ -175,7 +175,7 @@ export const Select = (
       <option>Normal Orange</option>
       <option>Normal Tomato</option>
     </select>
-    <select className="select select-bordered select-sm w-full">
+    <select className="select-bordered select select-sm w-full">
       <option disabled selected>
         Small
       </option>
@@ -183,7 +183,7 @@ export const Select = (
       <option>Small Orange</option>
       <option>Small Tomato</option>
     </select>
-    <select className="select select-bordered select-xs w-full">
+    <select className="select-bordered select select-xs w-full">
       <option disabled selected>
         Tiny
       </option>
@@ -255,44 +255,44 @@ export const SocialLinks = (
 );
 
 export const InputGroup = (
-  <div className="space-y-2 flex flex-col">
+  <div className="flex flex-col space-y-2">
     <div className="form-control">
-      <label className="input-group input-group-lg">
+      <label className="input-group-lg input-group">
         <span>LG</span>
         <input
           type="text"
           placeholder="Type here"
-          className="input input-bordered input-lg"
+          className="input-bordered input input-lg"
         />
       </label>
     </div>
     <div className="form-control">
-      <label className="input-group input-group-md">
+      <label className="input-group-md input-group">
         <span>MD</span>
         <input
           type="text"
           placeholder="Type here"
-          className="input input-bordered input-md"
+          className="input-bordered input input-md"
         />
       </label>
     </div>
     <div className="form-control">
-      <label className="input-group input-group-sm">
+      <label className="input-group-sm input-group">
         <span>SM</span>
         <input
           type="text"
           placeholder="Type here"
-          className="input input-bordered input-sm"
+          className="input-bordered input input-sm"
         />
       </label>
     </div>
     <div className="form-control">
-      <label className="input-group input-group-xs">
+      <label className="input-group-xs input-group">
         <span>XS</span>
         <input
           type="text"
           placeholder="Type here"
-          className="input input-bordered input-xs"
+          className="input-bordered input input-xs"
         />
       </label>
     </div>
@@ -302,19 +302,19 @@ export const InputGroup = (
 export const StackedCards = (
   <div>
     <div className="stack">
-      <div className="card shadow-md bg-primary text-primary-content">
+      <div className="card bg-primary text-primary-content shadow-md">
         <div className="card-body">
           <h2 className="card-title">Notification 1</h2>
           <p>You have 3 unread messages. Tap here to see.</p>
         </div>
       </div>
-      <div className="card shadow bg-primary text-primary-content">
+      <div className="card bg-primary text-primary-content shadow">
         <div className="card-body">
           <h2 className="card-title">Notification 2</h2>
           <p>You have 3 unread messages. Tap here to see.</p>
         </div>
       </div>
-      <div className="card shadow-sm bg-primary text-primary-content">
+      <div className="card bg-primary text-primary-content shadow-sm">
         <div className="card-body">
           <h2 className="card-title">Notification 3</h2>
           <p>You have 3 unread messages. Tap here to see.</p>
@@ -326,7 +326,7 @@ export const StackedCards = (
 
 export const Breadcrumbs = (
   <div>
-    <div className="text-sm breadcrumbs">
+    <div className="breadcrumbs text-sm">
       <ul>
         <li>
           <a href="/">Home</a>
@@ -337,7 +337,7 @@ export const Breadcrumbs = (
         <li>Add Document</li>
       </ul>
     </div>
-    <div className="text-sm breadcrumbs">
+    <div className="breadcrumbs text-sm">
       <ul>
         <li>
           <a href="/">
@@ -345,7 +345,7 @@ export const Breadcrumbs = (
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
               viewBox="0 0 24 24"
-              className="w-4 h-4 mr-2 stroke-current"
+              className="mr-2 h-4 w-4 stroke-current"
             >
               <path
                 strokeLinecap="round"
@@ -363,7 +363,7 @@ export const Breadcrumbs = (
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
               viewBox="0 0 24 24"
-              className="w-4 h-4 mr-2 stroke-current"
+              className="mr-2 h-4 w-4 stroke-current"
             >
               <path
                 strokeLinecap="round"
@@ -380,7 +380,7 @@ export const Breadcrumbs = (
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
             viewBox="0 0 24 24"
-            className="w-4 h-4 mr-2 stroke-current"
+            className="mr-2 h-4 w-4 stroke-current"
           >
             <path
               strokeLinecap="round"
