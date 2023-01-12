@@ -8,7 +8,7 @@ module.exports = {
     themes: [
       {
         mytheme: {
-          // Remember to set the theme-colour meta tag in index.html
+          // Remember to set the theme colours in index.html and manifest.json
           primary: '#6419E6',
           secondary: '#D926A9',
           accent: '#1FB2A6',
