@@ -15,16 +15,15 @@ const CrossIcon = () => (
 );
 
 export const Badges = (
-  // <div className="[&>*>*]:mr-1 [&>*>*]:mb-2">
-  <div className="flex flex-col items-center [&>*]:space-x-2 space-y-2">
+  <div className="[&>*>*]:mr-1 [&>*>*]:mb-2 min-[416px]:flex min-[416px]:flex-col min-[416px]:items-center">
     <div>
-      <div className="badge">neutral</div>
+      <div className="badge">badge</div>
       <div className="badge badge-primary">primary</div>
       <div className="badge badge-secondary">secondary</div>
       <div className="badge badge-accent">accent</div>
     </div>
     <div>
-      <div className="badge badge-outline">neutral</div>
+      <div className="badge badge-outline">outline</div>
       <div className="badge badge-primary badge-outline">primary</div>
       <div className="badge badge-secondary badge-outline">secondary</div>
       <div className="badge badge-accent badge-outline">accent</div>
