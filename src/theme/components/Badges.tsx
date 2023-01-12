@@ -48,3 +48,12 @@ export const Badges = (
     </div>
   </div>
 );
+
+export const BadgeSizes = (
+  <div className="flex flex-row items-center justify-center gap-1">
+    <span className="badge badge-lg">Large</span>
+    <span className="badge badge-md">Medium</span>
+    <span className="badge badge-sm">Small</span>
+    <span className="badge badge-xs">X-Small</span>
+  </div>
+);
