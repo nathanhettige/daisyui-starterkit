@@ -13,7 +13,7 @@ function ComponentContainer({
     <>
       <section
         className={
-          'bg-[#D9D9D9] space-y-2 bg-opacity-10 p-5 rounded-xl mb-5 w-full h-full break-inside-avoid-column'
+          'bg-[#D9D9D9] space-y-2.5 bg-opacity-10 p-5 rounded-xl mb-5 w-full h-full break-inside-avoid-column'
         }
       >
         <div>{componentName}</div>
