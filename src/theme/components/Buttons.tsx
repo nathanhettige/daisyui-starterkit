@@ -74,6 +74,10 @@ export const ButtonTypes = (
         <HeartIcon />
         Icon
       </button>
+      <button className="btn gap-2">
+        Inbox
+        <div className="badge badge-info">+99</div>
+      </button>
       <button className="btn btn-square loading"></button>
     </div>
   </div>
