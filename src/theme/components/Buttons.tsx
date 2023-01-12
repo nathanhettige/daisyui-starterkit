@@ -85,7 +85,7 @@ export const ButtonTypes = () => (
 
 export const ButtonGroup = () => (
   <div className="grid grid-cols-[auto,1fr] gap-1">
-    <div className="btn-group btn-group-vertical lg:btn-group-horizontal">
+    <div className="btn-group btn-group-vertical">
       <button className="btn">Button</button>
       <button className="btn btn-active">Active</button>
       <button className="btn">Button</button>
