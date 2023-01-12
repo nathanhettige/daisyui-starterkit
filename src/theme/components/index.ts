@@ -5,3 +5,4 @@ export * from './Miscellanous';
 export * from './Alerts';
 export * from './Avatars';
 export * from './Badges';
+export * from './Chat';
