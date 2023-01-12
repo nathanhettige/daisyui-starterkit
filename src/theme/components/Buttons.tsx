@@ -32,7 +32,7 @@ const HeartIcon = () => (
   </svg>
 );
 
-export const Buttons = () => (
+export const Buttons = (
   <div className="grid grid-cols-2 flex-wrap gap-x-1 gap-y-1">
     <button className="btn">Neutral</button>
     <button className="btn btn-primary">Primary</button>
@@ -49,7 +49,7 @@ export const Buttons = () => (
   </div>
 );
 
-export const ButtonTypes = () => (
+export const ButtonTypes = (
   <div className="grid grid-cols-[auto,1fr] gap-1">
     <div className="flex flex-col gap-2">
       <button className="btn btn-lg">Large</button>
@@ -83,7 +83,7 @@ export const ButtonTypes = () => (
   </div>
 );
 
-export const ButtonGroup = () => (
+export const ButtonGroup = (
   <div className="grid grid-cols-[auto,1fr] gap-1">
     <div className="btn-group btn-group-vertical">
       <button className="btn">Button</button>

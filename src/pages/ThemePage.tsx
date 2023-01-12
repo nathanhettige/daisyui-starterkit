@@ -1,8 +1,9 @@
 import * as components from '@theme/components';
 import ComponentContainer from '@theme/ComponentContainer';
+import React, { ReactElement } from 'react';
 
 const ThemePage = () => {
-  const spotlightComponets: Record<string, () => JSX.Element> = {
+  const spotlightComponets: Record<string, React.FC | ReactElement> = {
     /* Add components you want shown at the top */
     /* STILL IN DEVELOPMENT */
     Buttons: components.Buttons,
@@ -18,7 +19,7 @@ const ThemePage = () => {
               <ComponentContainer
                 key={key}
                 componentName={key}
-                Component={value}
+                component={value}
               />
             </>
           );
@@ -30,7 +31,7 @@ const ThemePage = () => {
                 <ComponentContainer
                   key={key}
                   componentName={formatComponentName(key)}
-                  Component={value}
+                  component={value}
                 />
               </>
             );

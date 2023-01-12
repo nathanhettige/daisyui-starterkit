@@ -1,4 +1,4 @@
-export const Chat = () => (
+export const Chat = (
   <>
     <div className="chat chat-start space-y-1">
       <div className="chat-image avatar placeholder">

@@ -1,13 +1,13 @@
-import { ReactElement } from 'react';
+import React, { ReactElement } from 'react';
 
 interface ComponentContainerProps {
   componentName: string;
-  Component: () => JSX.Element;
+  component: React.FC | ReactElement;
 }
 
 function ComponentContainer({
   componentName,
-  Component
+  component
 }: ComponentContainerProps): ReactElement {
   return (
     <>
@@ -17,7 +17,11 @@ function ComponentContainer({
         }
       >
         <p>{componentName}</p>
-        <Component />
+        <div>
+          {React.isValidElement(component)
+            ? component
+            : React.createElement(component)}
+        </div>
       </section>
     </>
   );

@@ -14,7 +14,7 @@ const CrossIcon = () => (
   </svg>
 );
 
-export const Badges = () => (
+export const Badges = (
   <div className="[&>*>*]:mr-1 [&>*>*]:mb-2 min-[416px]:flex min-[416px]:flex-col min-[416px]:items-center">
     <div>
       <div className="badge">badge</div>
@@ -49,7 +49,7 @@ export const Badges = () => (
   </div>
 );
 
-export const BadgeSizes = () => (
+export const BadgeSizes = (
   <div className="flex flex-row items-center justify-center gap-1">
     <span className="badge badge-lg">Large</span>
     <span className="badge badge-md">Medium</span>

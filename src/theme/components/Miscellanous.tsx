@@ -1,4 +1,4 @@
-export const Checkboxes = () => (
+export const Checkboxes = (
   <div className="space-x-2">
     <input type="checkbox" className="toggle toggle-success" checked />
     <input type="checkbox" className="toggle toggle-warning" checked />
@@ -7,7 +7,7 @@ export const Checkboxes = () => (
   </div>
 );
 
-export const Range = () => (
+export const Range = (
   <div>
     <input
       type="range"
@@ -40,7 +40,7 @@ export const Range = () => (
   </div>
 );
 
-export const Rating = () => (
+export const Rating = (
   <div className="space-y-2 flex flex-col">
     <div className="rating rating-xs">
       <input
@@ -157,7 +157,7 @@ export const Rating = () => (
   </div>
 );
 
-export const Select = () => (
+export const Select = (
   <div className="space-y-2 flex flex-col">
     <select className="select select-bordered select-lg w-full">
       <option disabled selected>
@@ -194,7 +194,7 @@ export const Select = () => (
   </div>
 );
 
-export const SocialLinks = () => (
+export const SocialLinks = (
   <div className="flex flex-row gap-4">
     <a href="http://twitter.com">
       <svg
@@ -232,7 +232,7 @@ export const SocialLinks = () => (
   </div>
 );
 
-export const InputGroup = () => (
+export const InputGroup = (
   <div className="space-y-2 flex flex-col">
     <div className="form-control">
       <label className="input-group input-group-lg">
@@ -277,7 +277,7 @@ export const InputGroup = () => (
   </div>
 );
 
-export const StackedCards = () => (
+export const StackedCards = (
   <div>
     <div className="stack">
       <div className="card shadow-md bg-primary text-primary-content">
@@ -302,7 +302,7 @@ export const StackedCards = () => (
   </div>
 );
 
-export const Breadcrumbs = () => (
+export const Breadcrumbs = (
   <div className="flex flex-col gap-0">
     <div className="text-sm breadcrumbs">
       <ul>
@@ -374,7 +374,7 @@ export const Breadcrumbs = () => (
   </div>
 );
 
-export const Code = () => (
+export const Code = (
   <div className="mockup-code">
     <pre data-prefix="1">
       <code>npm i daisyui</code>
