@@ -1,4 +1,4 @@
-export const Inputs = (
+export const Inputs = () => (
   <div className="space-y-2 flex flex-col">
     <input type="text" placeholder="Type here" className="input" />
     <input

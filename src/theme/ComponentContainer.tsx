@@ -1,13 +1,13 @@
-import { ReactElement, ReactNode } from 'react';
+import { ReactElement } from 'react';
 
 interface ComponentContainerProps {
   componentName: string;
-  componentBody: ReactNode;
+  Component: () => JSX.Element;
 }
 
 function ComponentContainer({
   componentName,
-  componentBody
+  Component
 }: ComponentContainerProps): ReactElement {
   return (
     <>
@@ -16,8 +16,8 @@ function ComponentContainer({
           'bg-[#D9D9D9] space-y-2.5 bg-opacity-10 p-5 rounded-xl mb-5 w-full h-full break-inside-avoid-column'
         }
       >
-        <div>{componentName}</div>
-        <div>{componentBody}</div>
+        <p>{componentName}</p>
+        <Component />
       </section>
     </>
   );

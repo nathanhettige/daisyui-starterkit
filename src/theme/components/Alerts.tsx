@@ -14,7 +14,7 @@ const InfoIcon = ({ className }: { className: string }) => (
   </svg>
 );
 
-export const Alerts = (
+export const Alerts = () => (
   <div className="space-y-1">
     <div className="alert shadow-lg">
       <div>

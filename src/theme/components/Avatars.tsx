@@ -1,4 +1,4 @@
-export const Avatars = (
+export const Avatars = () => (
   <div className="flex justify-center">
     <div className="space-x-2">
       <div className="avatar offline placeholder">
