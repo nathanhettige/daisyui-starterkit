@@ -9,7 +9,7 @@ export const Stats = () => {
     {
       title: 'Balance',
       value: '$8,400',
-      action: <button className="btn btn-sm btn-success">Deposit</button>
+      action: <button className="btn btn-success btn-sm">Deposit</button>
     },
     {
       title: 'Total Volume',
@@ -33,7 +33,7 @@ export const Stats = () => {
           xmlns="http://www.w3.org/2000/svg"
           fill="none"
           viewBox="0 0 24 24"
-          className="inline-block w-8 h-8 stroke-current"
+          className="inline-block h-8 w-8 stroke-current"
         >
           <path
             strokeLinecap="round"
@@ -53,7 +53,7 @@ export const Stats = () => {
           xmlns="http://www.w3.org/2000/svg"
           fill="none"
           viewBox="0 0 24 24"
-          className="inline-block w-8 h-8 stroke-current"
+          className="inline-block h-8 w-8 stroke-current"
         >
           <path
             strokeLinecap="round"
@@ -67,8 +67,8 @@ export const Stats = () => {
   ];
 
   return (
-    <div className="@container space-y-2">
-      <div className="stats stats-vertical @[393px]:stats-horizontal shadow mx-auto w-full">
+    <div className="space-y-2 @container">
+      <div className="stats stats-vertical mx-auto w-full shadow @[393px]:stats-horizontal">
         {stats.map((stat) => (
           <div className="stat" key={stat.title}>
             <div className="stat-figure text-secondary">{stat.icon}</div>
@@ -78,7 +78,7 @@ export const Stats = () => {
           </div>
         ))}
       </div>
-      <div className="stats stats-vertical @[381px]:stats-horizontal bg-primary text-primary-contet w-full">
+      <div className="text-primary-contet stats stats-vertical w-full bg-primary @[381px]:stats-horizontal">
         {statsWithAction.map((stat) => (
           <div className="stat" key={stat.title}>
             <div className="stat-title">{stat.title}</div>

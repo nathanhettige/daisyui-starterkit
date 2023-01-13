@@ -1,8 +1,8 @@
 export const Chat = (
   <>
     <div className="chat chat-start space-y-1">
-      <div className="chat-image avatar placeholder">
-        <div className="bg-neutral-focus text-neutral-content rounded-full w-10">
+      <div className="placeholder chat-image avatar">
+        <div className="w-10 rounded-full bg-neutral-focus text-neutral-content">
           <span>NH</span>
         </div>
       </div>

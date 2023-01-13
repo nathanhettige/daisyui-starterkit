@@ -3,7 +3,7 @@ const CrossIcon = () => (
     xmlns="http://www.w3.org/2000/svg"
     fill="none"
     viewBox="0 0 24 24"
-    className="inline-block w-3 h-3 stroke-current"
+    className="inline-block h-3 w-3 stroke-current"
   >
     <path
       strokeLinecap="round"
@@ -15,33 +15,33 @@ const CrossIcon = () => (
 );
 
 export const Badges = (
-  <div className="[&>*>*]:mr-1 [&>*>*]:mb-2 min-[416px]:flex min-[416px]:flex-col min-[416px]:items-center">
+  <div className="min-[416px]:flex min-[416px]:flex-col min-[416px]:items-center [&>*>*]:mr-1 [&>*>*]:mb-2">
     <div>
       <div className="badge">badge</div>
-      <div className="badge badge-primary">primary</div>
-      <div className="badge badge-secondary">secondary</div>
-      <div className="badge badge-accent">accent</div>
+      <div className="badge-primary badge">primary</div>
+      <div className="badge-secondary badge">secondary</div>
+      <div className="badge-accent badge">accent</div>
     </div>
     <div>
-      <div className="badge badge-outline">outline</div>
-      <div className="badge badge-primary badge-outline">primary</div>
-      <div className="badge badge-secondary badge-outline">secondary</div>
-      <div className="badge badge-accent badge-outline">accent</div>
+      <div className="badge-outline badge">outline</div>
+      <div className="badge-primary badge-outline badge">primary</div>
+      <div className="badge-secondary badge-outline badge">secondary</div>
+      <div className="badge-accent badge-outline badge">accent</div>
     </div>
     <div>
-      <div className="badge badge-info gap-2">
+      <div className="badge-info badge gap-2">
         <CrossIcon />
         info
       </div>
-      <div className="badge badge-success gap-2 items-center">
+      <div className="badge-success badge items-center gap-2">
         <CrossIcon />
         success
       </div>
-      <div className="badge badge-warning gap-2">
+      <div className="badge-warning badge gap-2">
         <CrossIcon />
         warning
       </div>
-      <div className="badge badge-error gap-2">
+      <div className="badge-error badge gap-2">
         <CrossIcon />
         error
       </div>

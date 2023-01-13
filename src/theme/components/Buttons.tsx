@@ -35,23 +35,23 @@ const HeartIcon = () => (
 export const Buttons = (
   <div className="grid grid-cols-2 flex-wrap gap-x-1 gap-y-1">
     <button className="btn">Neutral</button>
-    <button className="btn btn-primary">Primary</button>
-    <button className="btn btn-secondary">Secondary</button>
-    <button className="btn btn-accent">Accent</button>
-    <button className="btn btn-base-100">Base-100</button>
-    <button className="btn btn-info">Info</button>
-    <button className="btn btn-success">Success</button>
-    <button className="btn btn-warning">Warning</button>
-    <button className="btn btn-error">Error</button>
-    <button className="btn btn-disabled">Disabled</button>
-    <button className="btn loading flex flex-nowrap">Loading</button>
-    <button className="btn btn-outline">Outline</button>
+    <button className="btn-primary btn">Primary</button>
+    <button className="btn-secondary btn">Secondary</button>
+    <button className="btn-accent btn">Accent</button>
+    <button className="btn-base-100 btn">Base-100</button>
+    <button className="btn-info btn">Info</button>
+    <button className="btn-success btn">Success</button>
+    <button className="btn-warning btn">Warning</button>
+    <button className="btn-error btn">Error</button>
+    <button className="btn-disabled btn">Disabled</button>
+    <button className="loading btn flex flex-nowrap">Loading</button>
+    <button className="btn-outline btn">Outline</button>
   </div>
 );
 
 export const ButtonTypes = (
   <div className="grid grid-cols-[auto,1fr] gap-2">
-    <div className="flex flex-col justify-center gap-1 btn-group btn-group-vertical">
+    <div className="btn-group btn-group-vertical flex flex-col justify-center gap-1">
       <button className="btn btn-lg">Large</button>
       <button className="btn">Normal</button>
       <button className="btn btn-sm">Small</button>
@@ -59,7 +59,7 @@ export const ButtonTypes = (
     </div>
     <div className="flex flex-row flex-wrap justify-evenly gap-2">
       <div>
-        <div className="btn-group flex justify-center items-center">
+        <div className="btn-group flex items-center justify-center">
           <input type="radio" name="options" data-title="1" className="btn" />
           <input
             type="radio"
@@ -73,7 +73,7 @@ export const ButtonTypes = (
         </div>
       </div>
       <div>
-        <div className="btn-group flex justify-center items-center">
+        <div className="btn-group flex items-center justify-center">
           <input
             type="radio"
             name="x"
@@ -87,13 +87,13 @@ export const ButtonTypes = (
       <button className="btn btn-square">
         <CrossIcon />
       </button>
-      <button className="btn btn-square btn-outline">
+      <button className="btn btn-outline btn-square">
         <CrossIcon />
       </button>
       <button className="btn btn-circle">
         <CrossIcon />
       </button>
-      <button className="btn btn-circle btn-outline">
+      <button className="btn btn-outline btn-circle">
         <CrossIcon />
       </button>
       <button className="btn gap-2">
@@ -104,7 +104,7 @@ export const ButtonTypes = (
         Inbox
         <div className="badge badge-info">+99</div>
       </button>
-      <button className="btn btn-square loading"></button>
+      <button className="loading btn btn-square"></button>
     </div>
   </div>
 );

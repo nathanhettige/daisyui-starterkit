@@ -3,7 +3,7 @@ const InfoIcon = ({ className }: { className: string }) => (
     xmlns="http://www.w3.org/2000/svg"
     fill="none"
     viewBox="0 0 24 24"
-    className={`${className} flex-shrink-0 w-6 h-6`}
+    className={`${className} h-6 w-6 flex-shrink-0`}
   >
     <path
       strokeLinecap="round"

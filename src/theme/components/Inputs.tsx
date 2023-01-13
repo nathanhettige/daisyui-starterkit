@@ -1,16 +1,16 @@
 export const Inputs = (
-  <div className="space-y-2 flex flex-col">
+  <div className="flex flex-col space-y-2">
     <input type="text" placeholder="Type here" className="input" />
     <input
       type="text"
       placeholder="Type here"
-      className="input input-secondary"
+      className="input-secondary input"
     />
-    <input type="text" placeholder="Type here" className="input input-accent" />
+    <input type="text" placeholder="Type here" className="input-accent input" />
     <input
       type="text"
       placeholder="Type here"
-      className="input input-netural"
+      className="input-netural input"
     />
   </div>
 );

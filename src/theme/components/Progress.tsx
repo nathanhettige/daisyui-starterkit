@@ -1,5 +1,5 @@
 export const ProgressBars = (
-  <div className="flex flex-col gap-1 w-full">
+  <div className="flex w-full flex-col gap-1">
     <progress
       className="progress progress-error"
       value="15"
