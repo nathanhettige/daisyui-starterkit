@@ -7,3 +7,4 @@ export * from './Badges';
 export * from './Chat';
 export * from './Keyboard';
 export * from './Progress';
+export * from './Stats';
