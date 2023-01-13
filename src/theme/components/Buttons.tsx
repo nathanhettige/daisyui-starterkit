@@ -1,30 +1,30 @@
 export const Buttons = (
   <div className="grid grid-cols-2 flex-wrap gap-x-1 gap-y-1">
     <button className="btn">Neutral</button>
-    <button className="btn btn-primary">Primary</button>
-    <button className="btn btn-secondary">Secondary</button>
-    <button className="btn btn-accent">Accent</button>
-    <button className="btn btn-base-100">Base-100</button>
-    <button className="btn btn-info">Info</button>
-    <button className="btn btn-success">Success</button>
-    <button className="btn btn-warning">Warning</button>
-    <button className="btn btn-error">Error</button>
-    <button className="btn btn-disabled">Disabled</button>
-    <button className="btn loading flex flex-nowrap">Loading</button>
-    <button className="btn btn-outline">Outline</button>
+    <button className="btn-primary btn">Primary</button>
+    <button className="btn-secondary btn">Secondary</button>
+    <button className="btn-accent btn">Accent</button>
+    <button className="btn-base-100 btn">Base-100</button>
+    <button className="btn-info btn">Info</button>
+    <button className="btn-success btn">Success</button>
+    <button className="btn-warning btn">Warning</button>
+    <button className="btn-error btn">Error</button>
+    <button className="btn-disabled btn">Disabled</button>
+    <button className="loading btn flex flex-nowrap">Loading</button>
+    <button className="btn-outline btn">Outline</button>
   </div>
 );
 
 export const ButtonTypes = (
   <div className="grid grid-cols-[auto,1fr] gap-1">
     <div className="flex flex-col gap-2">
-      <button className="btn btn-lg">Large</button>
+      <button className="btn-lg btn">Large</button>
       <button className="btn">Normal</button>
-      <button className="btn btn-sm">Small</button>
-      <button className="btn btn-xs">Tiny</button>
+      <button className="btn-sm btn">Small</button>
+      <button className="btn-xs btn">Tiny</button>
     </div>
-    <div className="flex flex-row flex-wrap justify-center my-auto items-center gap-3">
-      <button className="btn btn-square">
+    <div className="my-auto flex flex-row flex-wrap items-center justify-center gap-3">
+      <button className="btn-square btn">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           className="h-6 w-6"
@@ -40,7 +40,7 @@ export const ButtonTypes = (
           />
         </svg>
       </button>
-      <button className="btn btn-square btn-outline">
+      <button className="btn-outline btn-square btn">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           className="h-6 w-6"
@@ -56,7 +56,7 @@ export const ButtonTypes = (
           />
         </svg>
       </button>
-      <button className="btn btn-circle">
+      <button className="btn-circle btn">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           className="h-6 w-6"
@@ -72,7 +72,7 @@ export const ButtonTypes = (
           />
         </svg>
       </button>
-      <button className="btn btn-circle btn-outline">
+      <button className="btn-outline btn-circle btn">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           className="h-6 w-6"
@@ -105,7 +105,7 @@ export const ButtonTypes = (
         </svg>
         Icon
       </button>
-      <button className="btn btn-square loading"></button>
+      <button className="loading btn-square btn"></button>
     </div>
   </div>
 );
