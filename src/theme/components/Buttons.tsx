@@ -35,17 +35,17 @@ const HeartIcon = () => (
 export const Buttons = (
   <div className="grid grid-cols-2 gap-x-1 gap-y-1">
     <button className="btn">Neutral</button>
-    <button className="btn btn-primary">Primary</button>
-    <button className="btn btn-secondary">Secondary</button>
-    <button className="btn btn-accent">Accent</button>
+    <button className="btn-primary btn">Primary</button>
+    <button className="btn-secondary btn">Secondary</button>
+    <button className="btn-accent btn">Accent</button>
     <button className="btn-base-100 btn">Base-100</button>
-    <button className="btn btn-info">Info</button>
-    <button className="btn btn-success">Success</button>
-    <button className="btn btn-warning">Warning</button>
-    <button className="btn btn-error">Error</button>
-    <button className="btn btn-disabled">Disabled</button>
+    <button className="btn-info btn">Info</button>
+    <button className="btn-success btn">Success</button>
+    <button className="btn-warning btn">Warning</button>
+    <button className="btn-error btn">Error</button>
+    <button className="btn-disabled btn">Disabled</button>
     <button className="loading btn flex flex-nowrap">Loading</button>
-    <button className="btn btn-outline">Outline</button>
+    <button className="btn-outline btn">Outline</button>
   </div>
 );
 
