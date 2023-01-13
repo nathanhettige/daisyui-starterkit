@@ -50,14 +50,38 @@ export const Buttons = (
 );
 
 export const ButtonTypes = (
-  <div className="grid grid-cols-[auto,1fr] gap-1">
-    <div className="flex flex-col gap-2">
+  <div className="grid grid-cols-[auto,1fr] gap-2">
+    <div className="flex flex-col justify-center gap-1 btn-group btn-group-vertical">
       <button className="btn btn-lg">Large</button>
       <button className="btn">Normal</button>
       <button className="btn btn-sm">Small</button>
       <button className="btn btn-xs">Tiny</button>
     </div>
-    <div className="flex flex-row flex-wrap justify-center my-auto items-center gap-3">
+    <div className="flex flex-row flex-wrap justify-evenly gap-2">
+      <div className="btn-group flex justify-center items-center">
+        <input type="radio" name="options" data-title="1" className="btn" />
+        <input
+          type="radio"
+          name="options"
+          data-title="2"
+          className="btn"
+          checked
+        />
+        <input type="radio" name="options" data-title="3" className="btn" />
+        <input type="radio" name="options" data-title="4" className="btn" />
+      </div>
+      <div>
+        <div className="btn-group flex justify-center items-center">
+          <input
+            type="radio"
+            name="x"
+            data-title="Dark"
+            className="btn"
+            checked
+          />
+          <input type="radio" name="x" data-title="Light" className="btn" />
+        </div>
+      </div>
       <button className="btn btn-square">
         <CrossIcon />
       </button>
@@ -83,40 +107,3 @@ export const ButtonTypes = (
   </div>
 );
 
-export const ButtonGroup = (
-  <div className="grid grid-cols-[auto,1fr] gap-1">
-    <div className="btn-group btn-group-vertical">
-      <button className="btn">Button</button>
-      <button className="btn btn-active">Active</button>
-      <button className="btn">Button</button>
-    </div>
-    <div className="flex flex-col justify-around">
-      <div>
-        <div className="btn-group flex justify-center items-center">
-          <input
-            type="radio"
-            name="x"
-            data-title="Dark"
-            className="btn"
-            checked
-          />
-          <input type="radio" name="x" data-title="Light" className="btn" />
-        </div>
-      </div>
-      <div>
-        <div className="btn-group flex justify-center items-center">
-          <input type="radio" name="options" data-title="1" className="btn" />
-          <input
-            type="radio"
-            name="options"
-            data-title="2"
-            className="btn"
-            checked
-          />
-          <input type="radio" name="options" data-title="3" className="btn" />
-          <input type="radio" name="options" data-title="4" className="btn" />
-        </div>
-      </div>
-    </div>
-  </div>
-);
