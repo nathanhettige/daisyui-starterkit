@@ -1,7 +1,24 @@
 import { ReactElement } from 'react';
 
 export const Stats = () => {
-  const data: Array<{
+  const statsWithAction: Array<{
+    title?: string;
+    value: string;
+    action?: ReactElement;
+  }> = [
+    {
+      title: 'Balance',
+      value: '$8,400',
+      action: <button className="btn btn-sm btn-success">Deposit</button>
+    },
+    {
+      title: 'Total Volume',
+      value: '$72,380',
+      action: <button className="btn btn-sm">View Trades</button>
+    }
+  ];
+
+  const stats: Array<{
     title?: string;
     value: string;
     description?: string;
@@ -50,17 +67,24 @@ export const Stats = () => {
   ];
 
   return (
-    <div className="@container">
+    <div className="@container space-y-2">
       <div className="stats stats-vertical @[393px]:stats-horizontal shadow mx-auto w-full">
-        {data.map((stat) => (
-          <>
-            <div className="stat">
-              <div className="stat-figure text-secondary">{stat.icon}</div>
-              <div className="stat-title">{stat.title}</div>
-              <div className="stat-value">{stat.value}</div>
-              <div className="stat-desc">{stat.description}</div>
-            </div>
-          </>
+        {stats.map((stat) => (
+          <div className="stat" key={stat.title}>
+            <div className="stat-figure text-secondary">{stat.icon}</div>
+            <div className="stat-title">{stat.title}</div>
+            <div className="stat-value">{stat.value}</div>
+            <div className="stat-desc">{stat.description}</div>
+          </div>
+        ))}
+      </div>
+      <div className="stats stats-vertical @[381px]:stats-horizontal bg-primary text-primary-contet w-full">
+        {statsWithAction.map((stat) => (
+          <div className="stat" key={stat.title}>
+            <div className="stat-title">{stat.title}</div>
+            <div className="stat-value">{stat.value}</div>
+            <div className="stat-actions">{stat.action}</div>
+          </div>
         ))}
       </div>
     </div>
