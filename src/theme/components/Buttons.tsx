@@ -106,4 +106,3 @@ export const ButtonTypes = (
     </div>
   </div>
 );
-
