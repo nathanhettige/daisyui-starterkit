@@ -58,17 +58,19 @@ export const ButtonTypes = (
       <button className="btn btn-xs">Tiny</button>
     </div>
     <div className="flex flex-row flex-wrap justify-evenly gap-2">
-      <div className="btn-group flex justify-center items-center">
-        <input type="radio" name="options" data-title="1" className="btn" />
-        <input
-          type="radio"
-          name="options"
-          data-title="2"
-          className="btn"
-          checked
-        />
-        <input type="radio" name="options" data-title="3" className="btn" />
-        <input type="radio" name="options" data-title="4" className="btn" />
+      <div>
+        <div className="btn-group flex justify-center items-center">
+          <input type="radio" name="options" data-title="1" className="btn" />
+          <input
+            type="radio"
+            name="options"
+            data-title="2"
+            className="btn"
+            checked
+          />
+          <input type="radio" name="options" data-title="3" className="btn" />
+          <input type="radio" name="options" data-title="4" className="btn" />
+        </div>
       </div>
       <div>
         <div className="btn-group flex justify-center items-center">
