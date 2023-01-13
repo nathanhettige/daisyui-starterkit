@@ -1,6 +1,6 @@
 export const PageLoading = () => {
   return (
-    <div className="h-screen w-screen flex justify-center items-top">
+    <div className="items-top flex h-screen w-screen justify-center">
       <progress className="progress"></progress>
     </div>
   );
