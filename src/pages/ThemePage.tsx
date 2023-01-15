@@ -10,6 +10,10 @@ const ThemePage = () => {
     Headings: components.Headings
   };
 
+  function formatComponentName(name: string): string {
+    return name.replace(/([A-Z])/g, ' $1').trim();
+  }
+
   return (
     <div className="w-screen p-4">
       <div className="masonry">
@@ -42,9 +46,5 @@ const ThemePage = () => {
     </div>
   );
 };
-
-function formatComponentName(name: string): string {
-  return name.replace(/([A-Z])/g, ' $1').trim();
-}
 
 export default ThemePage;
