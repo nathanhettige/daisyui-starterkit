@@ -102,7 +102,7 @@ export const ButtonTypes = (
       </button>
       <button className="btn gap-2">
         Inbox
-        <div className="badge-info badge">+99</div>
+        <div className="badge badge-info">+99</div>
       </button>
       <button className="loading btn btn-square"></button>
       <div className="tooltip" data-tip="Tool tip">
