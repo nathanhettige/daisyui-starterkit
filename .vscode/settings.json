@@ -1,0 +1,7 @@
+{
+	"editor.formatOnSave": true,
+	"editor.formatOnSaveMode": "modificationsIfAvailable",
+	"editor.defaultFormatter": "esbenp.prettier-vscode",
+	"editor.renderWhitespace": "all",
+	"editor.tabSize": 2
+}
