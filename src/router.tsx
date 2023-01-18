@@ -7,21 +7,21 @@ import App from './App';
 const ThemePage = lazy(async () => await import('./pages/ThemePage'));
 
 const router = createBrowserRouter(
-  [
-    {
-      path: '/',
-      element: <App />
-    },
-    {
-      path: '/theme',
-      element: (
-        <Suspense fallback={<PageLoading />}>
-          <ThemePage />
-        </Suspense>
-      )
-    }
-  ],
-  { basename: `${import.meta.env.BASE_URL}` }
+	[
+		{
+			path: '/',
+			element: <App />
+		},
+		{
+			path: '/theme',
+			element: (
+				<Suspense fallback={<PageLoading />}>
+					<ThemePage />
+				</Suspense>
+			)
+		}
+	],
+	{ basename: `${import.meta.env.BASE_URL}` }
 );
 
 export default router;
