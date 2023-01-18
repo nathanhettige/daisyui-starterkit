@@ -23,9 +23,11 @@
 	"ignorePatterns": ["vite.config.ts", "*.config.cjs"],
 	"plugins": ["react"],
 	"rules": {
+		"no-tabs": ["error", { "allowIndentationTabs": true }],
 		"@typescript-eslint/semi": "off",
 		"@typescript-eslint/explicit-function-return-type": "off",
 		"@typescript-eslint/space-before-function-paren": "off",
+		"@typescript-eslint/indent": "off",
 		"@typescript-eslint/member-delimiter-style": [
 			"warn",
 			{
@@ -40,6 +42,5 @@
 				"multilineDetection": "brackets"
 			}
 		]
-	},
-	"@typescript-eslint-no-tabs": ["error", { "allowIndentationTabs": true }]
+	}
 }
