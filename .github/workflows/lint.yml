@@ -33,5 +33,5 @@ jobs:
       - name: Run yarn prettier
         run: |
           if ! yarn prettier; then
-            echo "::error ::Style issues found, run yarn prettier:fix" && exit
+            echo "::error ::Style issues found, run yarn prettier:fix" && exit 1
           fi
