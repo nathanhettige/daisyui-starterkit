@@ -31,7 +31,7 @@ jobs:
           cache: 'yarn'
       - run: yarn install
       - name: yarn prettier
-      - run: |
+        run: |
           if ! yarn prettier; then
             exit $? && echo "::error ::Run yarn prettier:fix"
           fi
