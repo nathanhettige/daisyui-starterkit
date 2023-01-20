@@ -31,6 +31,5 @@ jobs:
           cache: 'yarn'
       - run: yarn install --immutable
       - run: yarn prettier
-      - run: echo "::notice ::Missing semicolon"
-      - run: echo "::error ::Missing semicolon"
-      - run: echo "::warning ::Missing semicolon"
+      - if: ${{ failure() && steps.demo.conclusion == 'failure' }}
+        run: echo "::error ::Run yarn prettier:fix"
