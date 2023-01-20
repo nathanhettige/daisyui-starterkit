@@ -35,7 +35,7 @@ jobs:
         #   if ! yarn prettier; then
         #     echo "::error ::Run yarn prettier:fix" && exit 1
         #   fi
+      - run: yarn prettier
       - name: Run yarn prettier
-        run: yarn prettier
         if: ${{ failure() }}
         run: echo "::error ::Run yarn prettier"
