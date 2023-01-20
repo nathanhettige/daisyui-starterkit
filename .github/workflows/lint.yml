@@ -30,14 +30,8 @@ jobs:
           node-version: latest
           cache: 'yarn'
       - run: yarn install
-      # - name: yarn prettier
-      #   run: |
-      #     if ! yarn prettier; then
-      #       echo "::error ::Run yarn prettier:fix" && exit 1
-      #     fi
-      - name: A/B Check
-        if: $ ! yarn prettier
-        uses: actions/github-script@v3
-        with:
-          script: |
-              core.setFailed('envA and envB are not equivalent!')
+      - name: yarn prettier
+        run: |
+          if ! yarn prettier; then
+            echo "::error ::Run yarn prettier:fix" && exit 1
+          fi
