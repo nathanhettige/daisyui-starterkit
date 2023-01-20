@@ -31,6 +31,7 @@ jobs:
           cache: 'yarn'
       - run: yarn install --immutable
       - run: yarn prettier
-      - name: test
-        if: ${{ failure()}}
-        run: echo "::error ::Run yarn prettier"
+        run: |
+          if ! yarn prettier; then
+            echo "::error ::Run yarn prettier:fix"
+          fi
