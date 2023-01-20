@@ -30,12 +30,8 @@ jobs:
           node-version: latest
           cache: 'yarn'
       - run: yarn install
-      # - name: Run yarn prettier
-        # run: |
-        #   if ! yarn prettier; then
-        #     echo "::error ::Run yarn prettier:fix" && exit 1
-        #   fi
-      - run: yarn prettier
       - name: Run yarn prettier
-        if: ${{ failure() }}
-        run: echo "::error ::Run yarn prettier"
+        run: |
+          if ! yarn prettier; then
+            echo "::error ::Run yarn prettier:fix" && exit
+          fi
