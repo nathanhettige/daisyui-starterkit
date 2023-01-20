@@ -37,4 +37,5 @@ jobs:
         #   fi
       - run: yarn prettier
         if: ${{ failure() }}
-          run: echo "::error ::Run yarn prettier"
+        steps:
+          - run: echo "::error ::Run yarn prettier"
