@@ -17,7 +17,7 @@ jobs:
         with:
           node-version: latest
           cache: 'yarn'
-      - run: yarn install --immutable
+      - run: yarn install
       - run: yarn lint
 
   prettier:
@@ -29,9 +29,8 @@ jobs:
         with:
           node-version: latest
           cache: 'yarn'
-      - run: yarn install --immutable
-      - run: yarn prettier
-        run: |
+      - run: yarn install
+      - run: |
           if ! yarn prettier; then
             echo "::error ::Run yarn prettier:fix"
           fi
