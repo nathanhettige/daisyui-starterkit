@@ -17,7 +17,7 @@ jobs:
         with:
           node-version: latest
           cache: 'yarn'
-      - run: yarn install --immutable
+      - run: yarn install
       - run: yarn lint
 
   prettier:
@@ -29,5 +29,9 @@ jobs:
         with:
           node-version: latest
           cache: 'yarn'
-      - run: yarn install --immutable
-      - run: yarn prettier
+      - run: yarn install
+      - name: Run yarn prettier
+        run: |
+          if ! yarn prettier; then
+            echo "::error ::Style issues found, run 'yarn prettier:fix'" && exit 1
+          fi
