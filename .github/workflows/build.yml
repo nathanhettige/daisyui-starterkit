@@ -1,3 +1,5 @@
+# Check for a succesful build. Does not save an artifact.
+
 name: Build
 
 on:
