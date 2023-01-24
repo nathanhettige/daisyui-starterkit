@@ -1,5 +1,4 @@
-# Check for a successful build.
-# Does not save build as an artifact.
+# Check for a successful build
 
 name: Build
 

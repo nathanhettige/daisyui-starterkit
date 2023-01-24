@@ -1,3 +1,8 @@
+# Deploy the build files to GitHub Pages. Ensure that deploying to pages using
+# actions is enabled on the repo.
+#
+# GitHub Pages documentation: https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site#publishing-with-a-custom-github-actions-workflow
+
 name: 'Deploy to GitHub Pages'
 
 on:
