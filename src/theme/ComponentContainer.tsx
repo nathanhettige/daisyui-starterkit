@@ -1,23 +1,27 @@
-import { type ReactElement, type ReactNode } from 'react';
+import React, { type ReactElement } from 'react';
 
 interface ComponentContainerProps {
   componentName: string;
-  componentBody: ReactNode;
+  component: React.FC | ReactElement;
 }
 
 function ComponentContainer({
   componentName,
-  componentBody
+  component
 }: ComponentContainerProps): ReactElement {
   return (
     <>
       <section
         className={
-          'mb-5 h-full w-full break-inside-avoid-column space-y-2 rounded-xl bg-[#D9D9D9] bg-opacity-10 p-5'
+          'mb-5 h-full w-full break-inside-avoid-column space-y-2.5 rounded-xl bg-[#D9D9D9] bg-opacity-10 p-5'
         }
       >
-        <div>{componentName}</div>
-        <div>{componentBody}</div>
+        <p>{componentName}</p>
+        <div>
+          {React.isValidElement(component)
+            ? component
+            : React.createElement(component)}
+        </div>
       </section>
     </>
   );
