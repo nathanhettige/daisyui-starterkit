@@ -1,36 +1,56 @@
+# Run linting and code style checks on the source code.
+# Scripts are run using yarn and are configured in package.json.
+
 name: Lint
 
 on:
-  pull_request:
   workflow_dispatch:
+  pull_request:
   push:
     branches:
       - main
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
 
 jobs:
   eslint:
     name: ESLint
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
-      - uses: actions/setup-node@v3
+      - name: Checkout branch
+        uses: actions/checkout@v3
+
+      - name: Setup latest version of node
+        uses: actions/setup-node@v3
         with:
           node-version: latest
           cache: 'yarn'
-      - run: yarn install
-      - run: yarn lint
+
+      - name: Install dependencies
+        run: yarn install
+
+      - name: Lint
+        run: yarn lint
 
   prettier:
     name: Prettier
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
-      - uses: actions/setup-node@v3
+      - name: Checkout branch
+        uses: actions/checkout@v3
+
+      - name: Setup latest version of node
+        uses: actions/setup-node@v3
         with:
           node-version: latest
           cache: 'yarn'
-      - run: yarn install
-      - name: Run yarn prettier
+
+      - name: Install dependencies
+        run: yarn install
+
+      - name: Run prettier --check
         run: |
           if ! yarn prettier; then
             echo "::error ::Style issues found, run 'yarn prettier:fix'" && exit 1
