@@ -1,6 +1,6 @@
 import * as components from '@theme/components';
 import ComponentContainer from '@theme/ComponentContainer';
-import React, { ReactElement } from 'react';
+import React, { type ReactElement } from 'react';
 
 const ThemePage = () => {
   const spotlightComponets: Record<string, React.FC | ReactElement> = {
