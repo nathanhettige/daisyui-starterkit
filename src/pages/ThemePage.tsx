@@ -1,4 +1,4 @@
-import { ReactNode } from 'react';
+import { type ReactNode } from 'react';
 import * as components from '@theme/components';
 import ComponentContainer from '@theme/ComponentContainer';
 
