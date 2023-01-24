@@ -1,4 +1,4 @@
-# Check for a succesful build. Does not save an artifact.
+# Check for a succesful build. Does not save build as an artifact.
 
 name: Build
 
@@ -8,13 +8,20 @@ on:
 
 jobs:
   build:
-    name: Vite Build
+    name: Vite build
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
-      - uses: actions/setup-node@v3
+      - name: Checkout branch
+        uses: actions/checkout@v3
+
+      - name: Setup latest version of node
+        uses: actions/setup-node@v3
         with:
           node-version: latest
           cache: 'yarn'
-      - run: yarn install --immutable
-      - run: yarn build
+
+      - name: Install dependencies
+        run: yarn install
+
+      - name: Build
+        run: yarn build
