@@ -41,12 +41,12 @@ export const Stats = () => {
     {
       title: 'Balance',
       value: '$8,400',
-      action: <button className="btn-success btn-sm btn">Deposit</button>
+      action: <button className="btn btn-success btn-sm">Deposit</button>
     },
     {
       title: 'Total Volume',
       value: '$72,380',
-      action: <button className="btn-sm btn">View Trades</button>
+      action: <button className="btn btn-sm">View Trades</button>
     }
   ];
 
