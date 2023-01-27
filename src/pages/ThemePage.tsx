@@ -1,17 +1,21 @@
-import { ReactNode } from 'react';
 import * as components from '@theme/components';
 import ComponentContainer from '@theme/ComponentContainer';
+import React, { type ReactElement } from 'react';
 
 const ThemePage = () => {
-  const spotlightComponets: Record<string, ReactNode> = {
+  const spotlightComponets: Record<string, React.FC | ReactElement> = {
     /* Add components you want shown at the top */
     /* STILL IN DEVELOPMENT */
     Buttons: components.Buttons,
     Headings: components.Headings
   };
 
+  function formatComponentName(name: string): string {
+    return name.replace(/([A-Z])/g, ' $1').trim();
+  }
+
   return (
-    <div className="p-4 w-screen">
+    <div className="w-screen p-4">
       <div className="masonry">
         {Object.entries(spotlightComponets).map(([key, value]) => {
           return (
@@ -19,7 +23,7 @@ const ThemePage = () => {
               <ComponentContainer
                 key={key}
                 componentName={key}
-                componentBody={value}
+                component={value}
               />
             </>
           );
@@ -31,7 +35,7 @@ const ThemePage = () => {
                 <ComponentContainer
                   key={key}
                   componentName={formatComponentName(key)}
-                  componentBody={value}
+                  component={value}
                 />
               </>
             );
@@ -42,9 +46,5 @@ const ThemePage = () => {
     </div>
   );
 };
-
-function formatComponentName(name: string): string {
-  return name.replace(/([A-Z])/g, ' $1').trim();
-}
 
 export default ThemePage;
