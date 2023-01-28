@@ -67,8 +67,8 @@ export const Stats = () => {
   ];
 
   return (
-    <div className="space-y-2 @container">
-      <div className="stats stats-vertical mx-auto w-full shadow @[393px]:stats-horizontal">
+    <div className="@container space-y-2">
+      <div className="stats stats-vertical @[393px]:stats-horizontal mx-auto w-full shadow">
         {stats.map((stat) => (
           <div className="stat" key={stat.title}>
             <div className="stat-figure text-secondary">{stat.icon}</div>
@@ -78,7 +78,7 @@ export const Stats = () => {
           </div>
         ))}
       </div>
-      <div className="text-primary-contet stats stats-vertical w-full bg-primary @[381px]:stats-horizontal">
+      <div className="text-primary-contet stats stats-vertical bg-primary @[381px]:stats-horizontal w-full">
         {statsWithAction.map((stat) => (
           <div className="stat" key={stat.title}>
             <div className="stat-title">{stat.title}</div>
