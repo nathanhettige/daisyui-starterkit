@@ -45,5 +45,8 @@
   "prettier": {
     "singleQuote": true,
     "trailingComma": "none"
+  },
+  "eslintConfig": {
+    "extends": "./config/.eslintrc.json"
   }
 }
