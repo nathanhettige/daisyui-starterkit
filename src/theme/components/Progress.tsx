@@ -50,7 +50,7 @@ const radialProgressStyle = (value: number) => {
 export const RadialProgress = (
   <div className="flex flex-row justify-evenly">
     <div
-      className="hidden min-[500px]:radial-progress"
+      className="min-[500px]:radial-progress hidden"
       style={radialProgressStyle(0)}
     >
       0%
