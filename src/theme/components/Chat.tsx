@@ -2,7 +2,7 @@ export const Chat = (
   <>
     <div className="chat chat-start space-y-1">
       <div className="placeholder chat-image avatar">
-        <div className="w-10 rounded-full bg-neutral-focus text-neutral-content">
+        <div className="bg-neutral-focus text-neutral-content w-10 rounded-full">
           <span>NH</span>
         </div>
       </div>
