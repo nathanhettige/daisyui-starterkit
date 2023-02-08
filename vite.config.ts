@@ -23,6 +23,6 @@ export default defineConfig(({ mode }) => {
       eslint({ failOnError: mode !== 'development' }),
       tsconfigPaths()
     ],
-    base: `${process.env.BASE_URL ?? ''}`
+    base: `${process.env.BASE_URL ?? '/'}`
   };
 });
