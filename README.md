@@ -16,7 +16,8 @@
 
 An up to date template to build a modern, performant and developer friendly React project with essential libraries configured out-of-the-box. The [theme page][deployment] allows teams to rapidly prototype and preview a design system backed by daisyUI and TailwindCSS.
 
-<img width="1440" alt="image" src="https://user-images.githubusercontent.com/67953260/209325862-dd5edef6-4e57-47b0-b621-94e1a7e6eef9.png">
+<img width="1440" alt="image" src="https://user-images.githubusercontent.com/67953260/217753335-3393e954-9c64-4cf0-9223-ac67459c671c.png">
+
 
 <br>
 
