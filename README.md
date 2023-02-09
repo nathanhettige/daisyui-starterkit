@@ -18,7 +18,6 @@ An up to date template to build a modern, performant and developer friendly Reac
 
 <img width="1440" alt="image" src="https://user-images.githubusercontent.com/67953260/217753335-3393e954-9c64-4cf0-9223-ac67459c671c.png">
 
-
 <br>
 
 </div>
