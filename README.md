@@ -3,7 +3,7 @@
 ![][logo-url]
 
 **Start your next React project in seconds.**\
-**[See the demo](https://nathanhettige.github.io/daisyui-starterkit)**
+**[See the demo][deployment]**
 
 ![][release]
 ![][build]
@@ -14,7 +14,7 @@
 
 <br>
 
-An up to date boilerplate to build a modern, performant and developer friendly React project with essential libraries configured out-of-the-box. The theme page allows teams to rapidly prototype and preview a design system backed by daisyUI and TailwindCSS.
+An up to date template to build a modern, performant and developer friendly React project with essential libraries configured out-of-the-box. The [theme page][deployment] allows teams to rapidly prototype and preview a design system backed by daisyUI and TailwindCSS.
 
 <img width="1440" alt="image" src="https://user-images.githubusercontent.com/67953260/209325862-dd5edef6-4e57-47b0-b621-94e1a7e6eef9.png">
 
@@ -26,8 +26,9 @@ An up to date boilerplate to build a modern, performant and developer friendly R
 
 - React 18 with TypeScript
 - Vite
+- Yarn
+- DaisyUI and TailwindCSS with [theme page][deployment]
 - GitHub Actions to build, test, deploy, and maintain your project
-- DaisyUI and TailwindCSS
 - Prettier and ESLint
 - React Query and more...
 
@@ -35,10 +36,10 @@ See [open issues](https://github.com/nathanhettige/daisyui-starterkit/issues) fo
 
 ## 🚀 Quick Start
 
+[Create a new repository](https://github.com/nathanhettige/daisyui-starterkit/generate) using this template. Clone it down and open a terminal at the root of the project.
+
 ```bash
-> git clone https://github.com/nathanhettige/daisyui-starterkit.git
-> cd daisyui-starterkit
-> yarn
+> yarn install
 > yarn dev
 ```
 
@@ -50,6 +51,7 @@ See [open issues](https://github.com/nathanhettige/daisyui-starterkit/issues) fo
 [closed-prs]: https://flat.badgen.net/github/closed-prs/nathanhettige/daisyui-starterkit
 [build]: https://img.shields.io/github/actions/workflow/status/nathanhettige/daisyui-starterkit/build.yml?label=build&logo=vite&logoColor=%23FFFFFF&style=flat-square
 [dependabot]: https://flat.badgen.net/github/dependabot/ubuntu/yaru
+[deployment]: https://nathanhettige.github.io/daisyui-starterkit
 [eslint&prettier]: https://img.shields.io/github/actions/workflow/status/nathanhettige/daisyui-starterkit/lint.yml?label=ESLint%20%26%20Prettier&logo=ESLint&style=flat-square
 [logo-url]: ./public/Logo.svg
 [last-commit]: https://flat.badgen.net/github/last-commit/nathanhettige/daisyui-starterkit/main
