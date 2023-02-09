@@ -25,7 +25,7 @@ An up to date boilerplate to build a modern, performant and developer friendly R
 ## 🌼 Features
 
 - React 18 with TypeScript
-- Vite
+- Vite + SWC
 - GitHub Actions to build, test, deploy, and maintain your project
 - DaisyUI and TailwindCSS
 - Prettier and ESLint
