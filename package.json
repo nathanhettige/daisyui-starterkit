@@ -19,7 +19,7 @@
   },
   "devDependencies": {
     "@tailwindcss/container-queries": "^0.1.0",
-    "@types/react": "^18.0.27",
+    "@types/react": "^18.0.28",
     "@types/react-dom": "^18.0.10",
     "@typescript-eslint/eslint-plugin": "^5.51.0",
     "@typescript-eslint/parser": "^5.51.0",
