@@ -25,7 +25,7 @@ An up to date template to build a modern, performant and developer friendly Reac
 ## 🌼 Features
 
 - React 18 with TypeScript
-- Vite
+- Vite + SWC
 - Yarn
 - DaisyUI and TailwindCSS with [theme page][deployment]
 - GitHub Actions to build, test, deploy, and maintain your project
