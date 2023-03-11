@@ -45,8 +45,9 @@ See [open issues](https://github.com/nathanhettige/daisyui-starterkit/issues) fo
 
 ## 🧑‍🎨 Rapidly prototype design system
 
-https://user-images.githubusercontent.com/67953260/224464989-b543fbab-1c15-4dcd-ae56-58419aa67b54.mp4
 See the [official docs](https://daisyui.com/docs/themes/) for a complete list of customisations.
+
+https://user-images.githubusercontent.com/67953260/224464989-b543fbab-1c15-4dcd-ae56-58419aa67b54.mp4
 
 <br>
 <br>
