@@ -34,20 +34,24 @@ An up to date template to build a modern, performant and developer friendly Reac
 
 See [open issues](https://github.com/nathanhettige/daisyui-starterkit/issues) for new features in development.
 
+
+## 🧑‍🎨 Rapid prototyping
+
+See the [official docs](https://daisyui.com/docs/themes/) for a complete list of customisations.
+
+https://user-images.githubusercontent.com/67953260/224464989-b543fbab-1c15-4dcd-ae56-58419aa67b54.mp4
+
 ## 🚀 Quick Start
 
 [Create a new repository](https://github.com/nathanhettige/daisyui-starterkit/generate) using this template. Clone it down and open a terminal at the root of the project.
 
 ```bash
+
 > yarn install
+
 > yarn dev
+
 ```
-
-## 🧑‍🎨 Rapidly prototype design system
-
-See the [official docs](https://daisyui.com/docs/themes/) for a complete list of customisations.
-
-https://user-images.githubusercontent.com/67953260/224464989-b543fbab-1c15-4dcd-ae56-58419aa67b54.mp4
 
 <br>
 <br>
