@@ -43,6 +43,11 @@ See [open issues](https://github.com/nathanhettige/daisyui-starterkit/issues) fo
 > yarn dev
 ```
 
+## 🧑‍🎨 Rapidly prototype design system
+
+https://user-images.githubusercontent.com/67953260/224464989-b543fbab-1c15-4dcd-ae56-58419aa67b54.mp4
+
+<br>
 <br>
 <div align="center">
 (づ ᴗ _ᴗ)づ Made with love ♡
