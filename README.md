@@ -25,7 +25,8 @@ An up to date template to build a modern, performant and developer friendly Reac
 
 See the [official docs](https://daisyui.com/docs/themes/) for a complete list of customisations.
 
-https://user-images.githubusercontent.com/67953260/224464989-b543fbab-1c15-4dcd-ae56-58419aa67b54.mp4
+https://user-images.githubusercontent.com/67953260/224526737-68b7f3fa-5303-4667-9d0f-ace146361c7b.mp4
+
 
 ## 🌼 Features
 
