@@ -12,8 +12,6 @@
 ![][closed-prs]
 ![][dependabot]
 
-<br>
-
 An up to date template to build a modern, performant and developer friendly React project with essential libraries configured out-of-the-box. The [theme page][deployment] allows teams to rapidly prototype and preview a design system backed by daisyUI and TailwindCSS.
 
 <img width="1440" alt="image" src="https://user-images.githubusercontent.com/67953260/217753335-3393e954-9c64-4cf0-9223-ac67459c671c.png">
@@ -21,6 +19,12 @@ An up to date template to build a modern, performant and developer friendly Reac
 <br>
 
 </div>
+
+## 🧑‍🎨 Fast prototyping
+
+See the [official docs](https://daisyui.com/docs/themes/) for a complete list of customisations.
+
+https://user-images.githubusercontent.com/67953260/224526737-68b7f3fa-5303-4667-9d0f-ace146361c7b.mp4
 
 ## 🌼 Features
 
@@ -41,6 +45,7 @@ See [open issues](https://github.com/nathanhettige/daisyui-starterkit/issues) fo
 ```bash
 > yarn install
 > yarn dev
+
 ```
 
 <br>
