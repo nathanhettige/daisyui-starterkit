@@ -1,4 +1,4 @@
-import React, { type ReactElement } from 'react';
+import React, { type FunctionComponent, type ReactElement } from 'react';
 
 interface ComponentContainerProps {
   componentName: string;
@@ -20,7 +20,7 @@ function ComponentContainer({
         <div>
           {React.isValidElement(component)
             ? component
-            : React.createElement(component)}
+            : React.createElement(component as FunctionComponent)}
         </div>
       </section>
     </>
