@@ -15,7 +15,7 @@ const CrossIcon = () => (
 );
 
 export const Badges = (
-  <div className="min-[416px]:flex min-[416px]:flex-col min-[416px]:items-center [&>*>*]:mr-1 [&>*>*]:mb-2">
+  <div className="min-[416px]:flex min-[416px]:flex-col min-[416px]:items-center [&>*>*]:mb-2 [&>*>*]:mr-1">
     <div>
       <div className="badge">badge</div>
       <div className="badge-primary badge">primary</div>
