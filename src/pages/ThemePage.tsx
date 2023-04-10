@@ -1,5 +1,5 @@
-import * as components from '@theme/components';
-import ComponentContainer from '@theme/ComponentContainer';
+import * as components from '@theme/index';
+import ComponentContainer from '@ui/utils/ComponentContainer';
 import { type ReactElement } from 'react';
 
 const ThemePage = () => {
