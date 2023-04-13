@@ -40,7 +40,7 @@
     "typescript": "5.0.4",
     "vite": "^4.2.1",
     "vite-plugin-eslint": "^1.8.1",
-    "vite-tsconfig-paths": "^4.0.8"
+    "vite-tsconfig-paths": "^4.2.0"
   },
   "prettier": {
     "singleQuote": true,
