@@ -15,7 +15,7 @@ const ThemePage = () => {
   }
 
   return (
-    <div className="w-screen p-4">
+    <div className="p-4">
       <div className="masonry">
         {Object.entries(spotlightComponets).map(([key, value]) => {
           return (
