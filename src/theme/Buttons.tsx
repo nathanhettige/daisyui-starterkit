@@ -61,26 +61,14 @@ export const ButtonTypes = (
       <div>
         <div className="btn-group flex items-center justify-center">
           <input type="radio" name="options" data-title="1" className="btn" />
-          <input
-            type="radio"
-            name="options"
-            data-title="2"
-            className="btn"
-            checked
-          />
+          <input type="radio" name="options" data-title="2" className="btn" />
           <input type="radio" name="options" data-title="3" className="btn" />
           <input type="radio" name="options" data-title="4" className="btn" />
         </div>
       </div>
       <div>
         <div className="btn-group flex items-center justify-center">
-          <input
-            type="radio"
-            name="x"
-            data-title="Dark"
-            className="btn"
-            checked
-          />
+          <input type="radio" name="x" data-title="Dark" className="btn" />
           <input type="radio" name="x" data-title="Light" className="btn" />
         </div>
       </div>

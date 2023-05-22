@@ -76,7 +76,7 @@ export const Navbar = (
         </button>
         <ul className="menu menu-compact dropdown-content bg-base-100 rounded-box mt-3 w-52 p-2 shadow">
           {navLinks.map((link) => (
-            <li key={link.path}>
+            <li key={link.title}>
               <a tabIndex={0} href={link.path}>
                 {link.title}
               </a>

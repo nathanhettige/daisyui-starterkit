@@ -1,5 +1,6 @@
 import * as components from '@theme/index';
 import ComponentContainer from '@ui/utils/ComponentContainer';
+import type React from 'react';
 import { type ReactElement } from 'react';
 
 const ThemePage = () => {
@@ -19,28 +20,24 @@ const ThemePage = () => {
       <div className="masonry">
         {Object.entries(spotlightComponets).map(([key, value]) => {
           return (
-            <>
-              <ComponentContainer
-                key={key}
-                componentName={key}
-                component={value}
-              />
-            </>
+            <ComponentContainer
+              key={key}
+              componentName={key}
+              component={value}
+            />
           );
         })}
         {Object.entries(components).map(([key, value]) => {
           if (!Object.values(spotlightComponets).includes(value)) {
             return (
-              <>
-                <ComponentContainer
-                  key={key}
-                  componentName={formatComponentName(key)}
-                  component={value}
-                />
-              </>
+              <ComponentContainer
+                key={key}
+                componentName={formatComponentName(key)}
+                component={value}
+              />
             );
           }
-          return <></>;
+          return null;
         })}
       </div>
     </div>
