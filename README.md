@@ -20,7 +20,7 @@ An up to date template to build a modern, performant and developer friendly Reac
 
 </div>
 
-## 🧑‍🎨 Fast prototyping
+## ✨ Fast prototyping
 
 See the [official docs](https://daisyui.com/docs/themes/) for a complete list of customisations.
 
@@ -30,10 +30,10 @@ https://user-images.githubusercontent.com/67953260/224526737-68b7f3fa-5303-4667-
 
 - React 18 with TypeScript
 - Vite + SWC
-- Yarn
-- DaisyUI and TailwindCSS with [theme page][deployment]
 - GitHub Actions to build, test, deploy, and maintain your project
+- DaisyUI and TailwindCSS with [theme page][deployment]
 - Prettier and ESLint
+- Yarn
 - React Query and more...
 
 See [open issues](https://github.com/nathanhettige/daisyui-starterkit/issues) for new features in development.
