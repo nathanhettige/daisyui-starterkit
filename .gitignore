@@ -23,6 +23,8 @@ chrome-user-data
 .vscode
 *.swp
 *.swo
+dist
+.eslintcache
 
 packages/react-devtools-core/dist
 packages/react-devtools-extensions/chrome/build
