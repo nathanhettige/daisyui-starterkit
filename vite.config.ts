@@ -1,9 +1,7 @@
 import { defineConfig, loadEnv } from 'vite';
 import react from '@vitejs/plugin-react-swc';
-import eslint from 'vite-plugin-eslint';
+import eslint from 'vite-plugin-eslint2';
 import tsconfigPaths from 'vite-tsconfig-paths';
-import tailwindcss from 'tailwindcss';
-import autoprefixer from 'autoprefixer';
 
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => {
@@ -18,11 +16,7 @@ export default defineConfig(({ mode }) => {
     css: {
       postcss: './config'
     },
-    plugins: [
-      react(),
-      eslint({ failOnError: mode !== 'development' }),
-      tsconfigPaths()
-    ],
+    plugins: [react(), eslint(), tsconfigPaths()],
     base: `${process.env.BASE_URL ?? '/'}`
   };
 });
