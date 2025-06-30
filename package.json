@@ -16,7 +16,7 @@
     "@tanstack/react-query-devtools": "^5.69.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
-    "react-router-dom": "^6.16.0"
+    "react-router-dom": "^7.6.3"
   },
   "devDependencies": {
     "@tailwindcss/container-queries": "^0.1.1",
